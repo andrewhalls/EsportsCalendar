@@ -12,6 +12,9 @@ use Validator;
 class ChannelController extends \BaseController
 {
 
+    /**
+     * @param ChannelRepository $repository
+     */
     public function __construct(ChannelRepository $repository)
     {
         $this->repository = $repository;

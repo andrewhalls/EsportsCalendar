@@ -35,19 +35,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Game.php">
+      <file leaf-file-name="DbGenreRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="690">
+              <folding>
+                <element signature="e#45#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/GenreRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="621">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Channel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Channel.php">
+      <file leaf-file-name="DbGameRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="31" selection-start="126" selection-end="126" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="690">
+              <folding>
+                <element signature="e#44#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChannelRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Channel/ChannelRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbChannelRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Channel/DbChannelRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="713">
+              <folding>
+                <element signature="e#47#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BroadcastController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="4" selection-start="105" selection-end="105" vertical-scroll-proportion="-2.6538463" vertical-offset="0" max-vertical-offset="2944">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeamController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="13" selection-start="549" selection-end="549" vertical-scroll-proportion="-14.5" vertical-offset="221" max-vertical-offset="2875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbRepository.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/DbRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="7" selection-start="495" selection-end="495" vertical-scroll-proportion="0.8349835" vertical-offset="253" max-vertical-offset="1127">
               <folding />
             </state>
           </provider>
@@ -56,78 +125,7 @@
       <file leaf-file-name="Broadcast.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="33" selection-start="132" selection-end="132" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BroadcastController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="101" selection-end="139" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="2875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChannelController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.8039216" vertical-offset="23" max-vertical-offset="2875">
-              <folding>
-                <element signature="e#45#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
-              <folding>
-                <element signature="e#45#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
-              <folding>
-                <element signature="e#45#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeamController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19262981" vertical-offset="0" max-vertical-offset="2875">
-              <folding>
-                <element signature="e#45#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Genre.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Genre.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Team.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Team.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
+            <state line="17" column="20" selection-start="339" selection-end="339" vertical-scroll-proportion="-12.576923" vertical-offset="64" max-vertical-offset="575">
               <folding />
             </state>
           </provider>
@@ -143,12 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/observables.php" />
-        <option value="$PROJECT_DIR$/app/views/blocks/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/blocks/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/blocks/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_03_08_182820_create_HTMLBlocks_table.php" />
-        <option value="$PROJECT_DIR$/app/models/HTMLBlock.php" />
         <option value="$PROJECT_DIR$/app/views/blocks/show.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Raffle.php" />
         <option value="$PROJECT_DIR$/app/views/raffles/block.blade.php" />
@@ -162,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Raffle/DbRaffleRepository.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Raffle/RaffleRepository.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Raffle/GameRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/BroadcastRepository.php" />
         <option value="$PROJECT_DIR$/app/models/EloquentPage.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/controllers/RafflesController.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/DbBroadcastRepositoryInterface.php" />
@@ -170,30 +161,37 @@
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Channel/DbChannelRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Channel/ChannelRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Genre/GenreRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Team/TeamRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/DbRepository.php" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/app/spec/RaffleSpec.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/DbBroadcastRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Channel/DbChannelRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepository.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Team/DbTeamRepository.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Game.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/models/Channel.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/models/Channel.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Genre.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Team.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/lang/en/validation.php" />
+        <option value="$PROJECT_DIR$/app/lang/en/groups.php" />
+        <option value="$PROJECT_DIR$/app/lang/en/pages.php" />
+        <option value="$PROJECT_DIR$/app/lang/en/reminders.php" />
+        <option value="$PROJECT_DIR$/app/lang/en/sessions.php" />
+        <option value="$PROJECT_DIR$/app/Authority/Service/Form/User/UserFormLaravelValidator.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/DbRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Team/TeamRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/DbBroadcastRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Team/DbTeamRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/BroadcastRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Channel/ChannelRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Channel/DbChannelRepository.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/repos/Genre/GenreRepository.php" />
       </list>
     </option>
   </component>
@@ -293,10 +291,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1056" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1918" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -431,140 +429,6 @@
               <option name="myItemId" value="GamingCalender" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamingCalender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Team" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamingCalender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Genre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamingCalender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamingCalender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Channel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamingCalender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Broadcast" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -585,28 +449,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamingCalender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,11 +571,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27213824" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27213824" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22678186" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.02768903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -743,8 +585,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25559106" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17342582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24730022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17473118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39740822" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25220263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -752,7 +595,6 @@
       <window_info id="PHPStats" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39740822" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -905,46 +747,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Channel/ChannelRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="217" selection-end="217" vertical-scroll-proportion="-5.8627453" vertical-offset="0" max-vertical-offset="506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/DbRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/BroadcastRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="265" selection-end="305" vertical-scroll-proportion="0.5393635" vertical-offset="0" max-vertical-offset="598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="-4.6" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spec/GameSpec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="-15.923077" vertical-offset="0" max-vertical-offset="552">
-          <folding>
-            <element signature="e#24#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="420" selection-end="420" vertical-scroll-proportion="-8.117647" vertical-offset="0" max-vertical-offset="897">
           <folding />
         </state>
       </provider>
@@ -956,116 +761,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/DbBroadcastRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Channel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="92" selection-end="114" vertical-scroll-proportion="-0.5294118" vertical-offset="42" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Channel/DbChannelRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="112" selection-end="112" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/GenreRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.9019608" vertical-offset="0" max-vertical-offset="621">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="110" selection-end="110" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Team/TeamRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="-7.2156863" vertical-offset="0" max-vertical-offset="506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Team/DbTeamRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="41" selection-start="16" selection-end="41" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="83" selection-end="109" vertical-scroll-proportion="-1.3333334" vertical-offset="1" max-vertical-offset="690">
+        <state line="4" column="33" selection-start="94" selection-end="94" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Channel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="126" selection-end="126" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
+        <state line="4" column="33" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Genre.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
+        <state line="4" column="33" selection-start="92" selection-end="92" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Team.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
+        <state line="4" column="33" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="132" selection-end="132" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
+        <state line="26" column="27" selection-start="580" selection-end="580" vertical-scroll-proportion="-10.333333" vertical-offset="71" max-vertical-offset="920">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
+    <entry file="file://$PROJECT_DIR$/app/filters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="101" selection-end="139" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="2875">
+        <state line="71" column="0" selection-start="1814" selection-end="1814" vertical-scroll-proportion="-3.137255" vertical-offset="1266" max-vertical-offset="2944">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php">
+    <entry file="file://$PROJECT_DIR$/app/lang/en/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.8039216" vertical-offset="23" max-vertical-offset="2875">
-          <folding>
-            <element signature="e#45#96#0" expanded="true" />
-          </folding>
+        <state line="26" column="5" selection-start="1164" selection-end="1164" vertical-scroll-proportion="-5.27451" vertical-offset="329" max-vertical-offset="2254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="1" selection-start="580" selection-end="580" vertical-scroll-proportion="-6.72549" vertical-offset="255" max-vertical-offset="736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="13" selection-start="1598" selection-end="1598" vertical-scroll-proportion="-6.019608" vertical-offset="1050" max-vertical-offset="1518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/reminders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="1" selection-start="681" selection-end="681" vertical-scroll-proportion="-6.27451" vertical-offset="209" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/en/sessions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="-0.9019608" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Authority/Service/Form/User/UserFormLaravelValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="-11.725491" vertical-offset="0" max-vertical-offset="736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Authority/Service/Form/FormServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-1.8039216" vertical-offset="0" max-vertical-offset="2185">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
+        <state line="15" column="40" selection-start="298" selection-end="298" vertical-scroll-proportion="-7.423077" vertical-offset="152" max-vertical-offset="2944">
           <folding>
             <element signature="e#45#90#0" expanded="true" />
           </folding>
@@ -1074,19 +863,123 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
+        <state line="15" column="41" selection-start="303" selection-end="303" vertical-scroll-proportion="-7.076923" vertical-offset="92" max-vertical-offset="2875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Team/DbTeamRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="690">
           <folding>
-            <element signature="e#45#92#0" expanded="true" />
+            <element signature="e#44#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Team/TeamRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/BroadcastRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Broadcast/DbBroadcastRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding>
+            <element signature="e#49#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding>
+            <element signature="e#45#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Channel/ChannelRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Channel/DbChannelRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="713">
+          <folding>
+            <element signature="e#47#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="105" selection-end="105" vertical-scroll-proportion="-2.6538463" vertical-offset="0" max-vertical-offset="2944">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19262981" vertical-offset="0" max-vertical-offset="2875">
+        <state line="29" column="13" selection-start="549" selection-end="549" vertical-scroll-proportion="-14.5" vertical-offset="221" max-vertical-offset="2875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="20" selection-start="339" selection-end="339" vertical-scroll-proportion="-12.576923" vertical-offset="64" max-vertical-offset="575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="690">
           <folding>
-            <element signature="e#45#90#0" expanded="true" />
+            <element signature="e#44#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/GenreRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="621">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/DbRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="495" selection-end="495" vertical-scroll-proportion="0.8349835" vertical-offset="253" max-vertical-offset="1127">
+          <folding />
         </state>
       </provider>
     </entry>

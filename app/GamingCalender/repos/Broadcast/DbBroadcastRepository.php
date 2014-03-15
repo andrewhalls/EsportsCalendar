@@ -21,5 +21,4 @@ class DbBroadcastRepository extends DbRepository implements BroadcastRepository
     {
         $this->model = $model;
     }
-
 }

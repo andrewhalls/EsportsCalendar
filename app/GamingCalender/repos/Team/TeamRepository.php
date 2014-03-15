@@ -1,5 +1,9 @@
 <?php namespace GamingCalendar\Repos\Team;
 
+/**
+ * Interface TeamRepository
+ * @package GamingCalendar\Repos\Team
+ */
 interface TeamRepository
 {
     /**

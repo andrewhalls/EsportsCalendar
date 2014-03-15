@@ -1,7 +1,9 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Team\DbTeamRepository;
-
+/**
+ * Class Team
+ * @package GamingCalendar\models
+ */
 class Team extends \Eloquent
 {
 

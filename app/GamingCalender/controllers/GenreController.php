@@ -12,6 +12,9 @@ use Validator;
 class GenreController extends \BaseController
 {
 
+    /**
+     * @param GenreRepository $repository
+     */
     public function __construct(GenreRepository $repository)
     {
         $this->repository = $repository;
@@ -116,5 +119,4 @@ class GenreController extends \BaseController
 
         return Redirect::route('genres.index');
     }
-
 }

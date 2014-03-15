@@ -1,7 +1,9 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Genre\DbGenreRepository;
-
+/**
+ * Class Genre
+ * @package GamingCalendar\models
+ */
 class Genre extends \Eloquent
 {
 

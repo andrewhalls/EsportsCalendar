@@ -12,6 +12,9 @@ use Validator;
 class TeamController extends \BaseController
 {
 
+    /**
+     * @param TeamRepository $repository
+     */
     public function __construct(TeamRepository $repository)
     {
         $this->repository = $repository;
@@ -24,7 +27,7 @@ class TeamController extends \BaseController
      */
     public function index()
     {
-        $broadcast = $this->repository->all();
+        $team = $this->repository->all();
 
         return View::make('team.index', compact('team'));
     }
@@ -116,5 +119,4 @@ class TeamController extends \BaseController
 
         return Redirect::route('teams.index');
     }
-
 }

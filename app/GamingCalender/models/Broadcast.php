@@ -1,7 +1,9 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Broadcast\DbBroadcastRepository;
-
+/**
+ * Class Broadcast
+ * @package GamingCalendar\models
+ */
 class Broadcast extends \Eloquent
 {
 

@@ -4,7 +4,8 @@
 		"cartalyst/sentry": "2.1.*",
 		"mockery/mockery": "dev-master@dev",
 		"phpunit/phpunit": "3.7.*",
-		"phpspec/phpspec": "2.0.*@dev"
+		"phpspec/phpspec": "2.0.*@dev",
+        "benconstable/phpspec-laravel": "*"
 	},
 	"require-dev": {
         "way/generators": "2.*",
@@ -23,7 +24,7 @@
 			"Authority": "app/"
 		},
 		"psr-4": {
-            "GamingCalendar\\": "app/"
+            "GamingCalendar": "app/"
         }
 	},
 	"scripts": {

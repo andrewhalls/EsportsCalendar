@@ -1,5 +1,9 @@
 <?php namespace GamingCalendar\Repos\Channel;
 
+/**
+ * Interface ChannelRepository
+ * @package GamingCalendar\Repos\Channel
+ */
 interface ChannelRepository
 {
     /**

@@ -20,11 +20,11 @@ return array(
 	"alpha_dash"       => "The :attribute may only contain letters, numbers, and dashes.",
 	"alpha_num"        => "The :attribute may only contain letters and numbers.",
 	"before"           => "The :attribute must be a date before :date.",
-	"between"          => array(
+	"between"          => [
 		"numeric" => "The :attribute must be between :min - :max.",
 		"file"    => "The :attribute must be between :min - :max kilobytes.",
 		"string"  => "The :attribute must be between :min - :max characters.",
-	),
+	],
 	"confirmed"        => "The :attribute confirmation does not match.",
 	"date"             => "The :attribute is not a valid date.",
 	"date_format"      => "The :attribute does not match the format :format.",

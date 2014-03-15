@@ -12,6 +12,9 @@ use Validator;
 class GameController extends \BaseController
 {
 
+    /**
+     * @param GameRepository $repository
+     */
     public function __construct(GameRepository $repository)
     {
         $this->repository = $repository;

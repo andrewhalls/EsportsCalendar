@@ -12,6 +12,9 @@ use Validator;
 class BroadcastController extends \BaseController
 {
 
+    /**
+     * @param BroadcastRepository $repository
+     */
     public function __construct(BroadcastRepository $repository)
     {
         $this->repository = $repository;

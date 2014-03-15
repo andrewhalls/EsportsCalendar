@@ -1,7 +1,9 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Channel\DbChannelRepository;
-
+/**
+ * Class Channel
+ * @package GamingCalendar\models
+ */
 class Channel extends \Eloquent
 {
 

@@ -1,5 +1,9 @@
 <?php namespace GamingCalendar\Repos;
 
+/**
+ * Class DbRepository
+ * @package GamingCalendar\Repos
+ */
 abstract class DbRepository
 {
 
