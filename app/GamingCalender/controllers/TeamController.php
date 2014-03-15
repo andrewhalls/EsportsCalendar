@@ -1,6 +1,9 @@
 <?php namespace GamingCalendar\Controllers;
 
 use GamingCalendar\Repos\Team\TeamRepository;
+use View;
+use Redirect;
+use Validator;
 
 /**
  * Class TeamController

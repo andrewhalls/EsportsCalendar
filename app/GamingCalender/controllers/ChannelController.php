@@ -1,6 +1,9 @@
 <?php namespace GamingCalendar\Controllers;
 
 use GamingCalendar\Repos\Channel\ChannelRepository;
+use View;
+use Redirect;
+use Validator;
 
 /**
  * Class ChannelController

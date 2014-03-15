@@ -1,6 +1,9 @@
 <?php namespace GamingCalendar\Controllers;
 
 use GamingCalendar\Repos\Genre\GenreRepository;
+use View;
+use Redirect;
+use Validator;
 
 /**
  * Class GenreController

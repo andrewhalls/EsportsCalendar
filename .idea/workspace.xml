@@ -35,42 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DbGameRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="83" selection-end="109" vertical-scroll-proportion="-1.3333334" vertical-offset="1" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbGenreRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Genre/DbGenreRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="110" selection-end="110" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeamRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Team/TeamRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="-7.2156863" vertical-offset="0" max-vertical-offset="506">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbTeamRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Team/DbTeamRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Game.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Game.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,6 +62,59 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BroadcastController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="101" selection-end="139" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="2875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChannelController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="14" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.8039216" vertical-offset="23" max-vertical-offset="2875">
+              <folding>
+                <element signature="e#45#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
+              <folding>
+                <element signature="e#45#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
+              <folding>
+                <element signature="e#45#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeamController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19262981" vertical-offset="0" max-vertical-offset="2875">
+              <folding>
+                <element signature="e#45#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Genre.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Genre.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,19 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Team.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Team.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Team.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.62861735" vertical-offset="0" max-vertical-offset="622">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="41" selection-start="16" selection-end="41" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="598">
+            <state line="17" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
               <folding />
             </state>
           </provider>
@@ -169,11 +177,6 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/app/spec/RaffleSpec.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/GameRepository.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/repos/Game/DbGameRepository.php" />
@@ -186,6 +189,11 @@
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Genre.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Team.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php" />
+        <option value="$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php" />
       </list>
     </option>
   </component>
@@ -941,44 +949,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="45" selection-end="92" vertical-scroll-proportion="-1.7692307" vertical-offset="0" max-vertical-offset="2806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="45" selection-end="96" vertical-scroll-proportion="-0.9019608" vertical-offset="0" max-vertical-offset="2806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.1568627" vertical-offset="0" max-vertical-offset="2806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="10" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.7319933" vertical-offset="0" max-vertical-offset="1886">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="95" selection-end="95" vertical-scroll-proportion="-1.8039216" vertical-offset="0" max-vertical-offset="2806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="207" selection-end="207" vertical-scroll-proportion="27.423077" vertical-offset="897" max-vertical-offset="2806">
           <folding />
         </state>
       </provider>
@@ -1053,13 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="132" selection-end="132" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Genre.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
@@ -1069,8 +1035,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Team.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.62861735" vertical-offset="0" max-vertical-offset="622">
+        <state line="17" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="529">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="132" selection-end="132" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="529">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/BroadcastController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="101" selection-end="139" vertical-scroll-proportion="-1.3529412" vertical-offset="0" max-vertical-offset="2875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/ChannelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.8039216" vertical-offset="23" max-vertical-offset="2875">
+          <folding>
+            <element signature="e#45#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
+          <folding>
+            <element signature="e#45#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="2875">
+          <folding>
+            <element signature="e#45#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/TeamController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19262981" vertical-offset="0" max-vertical-offset="2875">
+          <folding>
+            <element signature="e#45#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

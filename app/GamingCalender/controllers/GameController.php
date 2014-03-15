@@ -1,6 +1,9 @@
 <?php namespace GamingCalendar\Controllers;
 
 use GamingCalendar\Repos\Game\GameRepository;
+use View;
+use Redirect;
+use Validator;
 
 /**
  * Class GameController
