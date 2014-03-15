@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andrewhalls/EsportsCalendar.png?branch=master)](https://travis-ci.org/andrewhalls/EsportsCalendar) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andrewhalls/EsportsCalendar/badges/quality-score.png?s=09c724c8c43c0c4ee848b9ef6b740953130fb839)](https://scrutinizer-ci.com/g/andrewhalls/EsportsCalendar/)
+
 ## Laravel 4 with Sentry 2 - Version 2.0
 
 This is a demo of [Sentry 2](https://github.com/cartalyst/sentry) integrated with [Laravel 4](https://github.com/laravel/laravel/tree/develop) and [Bootstrap 3.0](http://getbootstrap.com).  This repo is intended to be for reference only - if you want to use this code in your own app I suggest using [Sentinel](https://github.com/rydurham/Sentinel) - a laravel pacakge based on this repo.  
