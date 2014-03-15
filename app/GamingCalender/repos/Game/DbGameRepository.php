@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\Repos\Game;
 
 use GamingCalendar\Repos\DbRepository;
-use Game;
+use GamingCalendar\models\Game;
 
 /**
  * Class DbGameRepository

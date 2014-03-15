@@ -23,7 +23,7 @@
 			"Authority": "app/"
 		},
 		"psr-4": {
-            "GamingCalendar\\": "app/GamingCalendar"
+            "GamingCalendar\\": "app/"
         }
 	},
 	"scripts": {

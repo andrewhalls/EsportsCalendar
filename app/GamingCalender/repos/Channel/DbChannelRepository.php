@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\Repos\Channel;
 
 use GamingCalendar\Repos\DbRepository;
-use Channel;
+use GamingCalendar\models\Channel;
 
 /**
  * Class DbChannelRepository

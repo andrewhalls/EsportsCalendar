@@ -6,13 +6,13 @@ use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
 /**
- * Class TestSpec
+ * Class GameSpec
  * @package spec
  */
-class RaffleSpec extends ObjectBehavior
+class GameSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('Raffle');
+        $this->shouldHaveType('Game');
     }
 }

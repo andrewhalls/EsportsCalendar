@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\Repos\Broadcast;
 
 use GamingCalendar\Repos\DbRepository;
-use Broadcast;
+use GamingCalendar\models\Broadcast;
 
 /**
  * Class DbBroadcastRepository

@@ -6,7 +6,6 @@
  */
 interface GameRepository
 {
-
     /**
      * Fetch a record by id
      *

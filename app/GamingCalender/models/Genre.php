@@ -1,8 +1,8 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Genre\DbGenreRepositoryInterface;
+use GamingCalendar\Repos\Genre\DbGenreRepository;
 
-class Genre extends \Eloquent implements DbGenreRepositoryInterface
+class Genre extends \Eloquent
 {
 
     public $table = 'genre';

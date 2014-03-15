@@ -1,4 +1,6 @@
-<?php namespace GamingCalendar\controllers;
+<?php namespace GamingCalendar\Controllers;
+
+use GamingCalendar\Repos\Genre\GenreRepository;
 
 /**
  * Class GenreController

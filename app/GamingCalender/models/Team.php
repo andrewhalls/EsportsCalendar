@@ -1,8 +1,8 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Team\DbTeamRepositoryInterface;
+use GamingCalendar\Repos\Team\DbTeamRepository;
 
-class Team extends \Eloquent implements DbTeamRepositoryInterface
+class Team extends \Eloquent
 {
 
     public $table = 'team';

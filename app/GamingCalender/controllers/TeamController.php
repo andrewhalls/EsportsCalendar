@@ -1,4 +1,6 @@
-<?php namespace GamingCalendar\controllers;
+<?php namespace GamingCalendar\Controllers;
+
+use GamingCalendar\Repos\Team\TeamRepository;
 
 /**
  * Class TeamController

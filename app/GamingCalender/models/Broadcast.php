@@ -2,7 +2,7 @@
 
 use GamingCalendar\Repos\Broadcast\DbBroadcastRepository;
 
-class Broadcast extends \Eloquent implements DbBroadcastRepository
+class Broadcast extends \Eloquent
 {
 
     public $table = 'broadcast';
