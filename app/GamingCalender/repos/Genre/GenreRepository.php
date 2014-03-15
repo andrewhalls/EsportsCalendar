@@ -1,6 +1,11 @@
 <?php namespace GamingCalendar\Repos\Genre;
 
-interface GenreRepository {
+/**
+ * Interface GenreRepository
+ * @package GamingCalendar\Repos\Genre
+ */
+interface GenreRepository
+{
 
     /**
      * Fetch a record by id
@@ -9,5 +14,8 @@ interface GenreRepository {
      */
     public function find($id);
 
+    /**
+     * Get all records.
+     */
     public function all();
 }

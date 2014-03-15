@@ -4,10 +4,10 @@ use GamingCalendar\Repos\DbRepository;
 use Channel;
 
 /**
- * Class DbChannelRepositoryInterface
+ * Class DbChannelRepository
  * @package GamingCalendar\Repos\Channel
  */
-class DbChannelRepositoryInterface extends DbRepository implements ChannelRepository
+class DbChannelRepository extends DbRepository implements ChannelRepository
 {
 
     /**
@@ -22,5 +22,4 @@ class DbChannelRepositoryInterface extends DbRepository implements ChannelReposi
     {
         $this->model = $model;
     }
-
 }

@@ -1,5 +1,9 @@
 <?php namespace GamingCalendar\Repos\Game;
 
+/**
+ * Interface GameRepository
+ * @package GamingCalendar\Repos\Game
+ */
 interface GameRepository
 {
 
@@ -10,5 +14,8 @@ interface GameRepository
      */
     public function find($id);
 
+    /**
+     * Get all records.
+     */
     public function all();
 }

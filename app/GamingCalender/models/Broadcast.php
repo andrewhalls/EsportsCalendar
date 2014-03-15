@@ -1,8 +1,8 @@
 <?php namespace GamingCalendar\models;
 
-use GamingCalendar\Repos\Broadcast\DbBroadcastRepositoryInterface;
+use GamingCalendar\Repos\Broadcast\DbBroadcastRepository;
 
-class Broadcast extends \Eloquent implements DbBroadcastRepositoryInterface
+class Broadcast extends \Eloquent implements DbBroadcastRepository
 {
 
     public $table = 'broadcast';

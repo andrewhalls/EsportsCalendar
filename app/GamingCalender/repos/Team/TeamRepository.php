@@ -2,7 +2,6 @@
 
 interface TeamRepository
 {
-
     /**
      * Fetch a record by id
      *
@@ -10,5 +9,8 @@ interface TeamRepository
      */
     public function find($id);
 
+    /**
+     * Get all records.
+     */
     public function all();
 }

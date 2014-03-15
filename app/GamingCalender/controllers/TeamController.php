@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\controllers;
 
 /**
- * Class BroadcastController
+ * Class TeamController
  * @package GamingCalendar\controllers
  */
 class TeamController extends \BaseController
@@ -21,7 +21,7 @@ class TeamController extends \BaseController
     {
         $broadcast = $this->repository->all();
 
-        return View::make('broadcast.index', compact('broadcast'));
+        return View::make('team.index', compact('team'));
     }
 
     /**
@@ -31,7 +31,7 @@ class TeamController extends \BaseController
      */
     public function create()
     {
-        return View::make('broadcasts.create');
+        return View::make('teams.create');
     }
 
     /**
@@ -49,7 +49,7 @@ class TeamController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('broadcasts.index');
+        return Redirect::route('teams.index');
     }
 
     /**
@@ -60,9 +60,9 @@ class TeamController extends \BaseController
      */
     public function show($id)
     {
-        $broadcasts = $this->repository->findOrFail($id);
+        $teams = $this->repository->findOrFail($id);
 
-        return View::make('broadcasts.show', compact('broadcasts'));
+        return View::make('teams.show', compact('teams'));
     }
 
     /**

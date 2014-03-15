@@ -36,6 +36,4 @@ abstract class DbRepository
     {
         return $this->model->all();
     }
-
-
-} 
+}

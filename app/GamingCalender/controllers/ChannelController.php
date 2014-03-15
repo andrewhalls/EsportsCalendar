@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\controllers;
 
 /**
- * Class BroadcastController
+ * Class ChannelController
  * @package GamingCalendar\controllers
  */
 class ChannelController extends \BaseController

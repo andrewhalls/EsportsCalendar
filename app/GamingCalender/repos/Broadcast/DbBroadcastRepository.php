@@ -4,10 +4,10 @@ use GamingCalendar\Repos\DbRepository;
 use Broadcast;
 
 /**
- * Class DbBroadcastRepositoryInterface
+ * Class DbBroadcastRepository
  * @package GamingCalendar\Repos\Broadcast
  */
-class DbBroadcastRepositoryInterface extends DbRepository implements BroadcastRepository
+class DbBroadcastRepository extends DbRepository implements BroadcastRepository
 {
     /**
      * @var Broadcast

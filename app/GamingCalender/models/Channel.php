@@ -2,7 +2,7 @@
 
 use GamingCalendar\Repos\Channel\DbChannelRepository;
 
-class Channel extends \Eloquent implements DbChannelRepositoryInterface
+class Channel extends \Eloquent implements DbChannelRepository
 {
 
     public $table = 'channel';

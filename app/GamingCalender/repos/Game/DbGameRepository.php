@@ -4,22 +4,21 @@ use GamingCalendar\Repos\DbRepository;
 use Game;
 
 /**
- * Class DbRaffleRepository
- * @package Raffles\Repos\Raffle
+ * Class DbGameRepository
+ * @package GamingCalendar\Repos\Game
  */
-class DbGameRepositoryInterface extends DbRepository implements GameRepository {
-
+class DbGameRepository extends DbRepository implements GameRepository
+{
     /**
-     * @var Product
+     * @var Game
      */
     protected $model;
 
     /**
-     * @param Raffle $model
+     * @param Game $model
      */
     public function __construct(Game $model)
     {
         $this->model = $model;
     }
-
 }

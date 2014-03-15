@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\Repos\Channel;
 
-interface ChannelRepository {
-
+interface ChannelRepository
+{
     /**
      * Fetch a record by id
      *
@@ -9,5 +9,8 @@ interface ChannelRepository {
      */
     public function find($id);
 
+    /**
+     * Get all records.
+     */
     public function all();
 }

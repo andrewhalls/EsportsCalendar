@@ -1,7 +1,7 @@
 <?php namespace GamingCalendar\controllers;
 
 /**
- * Class BroadcastController
+ * Class GenreController
  * @package GamingCalendar\controllers
  */
 class GenreController extends \BaseController
@@ -19,9 +19,9 @@ class GenreController extends \BaseController
      */
     public function index()
     {
-        $broadcast = $this->repository->all();
+        $genre = $this->repository->all();
 
-        return View::make('broadcast.index', compact('broadcast'));
+        return View::make('genre.index', compact('genre'));
     }
 
     /**
@@ -31,7 +31,7 @@ class GenreController extends \BaseController
      */
     public function create()
     {
-        return View::make('broadcasts.create');
+        return View::make('genres.create');
     }
 
     /**
@@ -49,7 +49,7 @@ class GenreController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('broadcasts.index');
+        return Redirect::route('genres.index');
     }
 
     /**
@@ -60,9 +60,9 @@ class GenreController extends \BaseController
      */
     public function show($id)
     {
-        $broadcasts = $this->repository->findOrFail($id);
+        $genres = $this->repository->findOrFail($id);
 
-        return View::make('broadcasts.show', compact('broadcasts'));
+        return View::make('genres.show', compact('genres'));
     }
 
     /**

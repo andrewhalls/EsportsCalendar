@@ -4,11 +4,11 @@ use GamingCalendar\Repos\DbRepository;
 use Team;
 
 /**
- * Class DbTeamRepositoryInterface
+ * Class DbTeamRepository
  * @package GamingCalendar\Repos\Team
  */
-class DbTeamRepositoryInterface extends DbRepository implements TeamRepository {
-
+class DbTeamRepository extends DbRepository implements TeamRepository
+{
     /**
      * @var Team
      */
@@ -21,5 +21,4 @@ class DbTeamRepositoryInterface extends DbRepository implements TeamRepository {
     {
         $this->model = $model;
     }
-
 }

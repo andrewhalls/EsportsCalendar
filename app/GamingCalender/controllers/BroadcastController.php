@@ -111,5 +111,4 @@ class BroadcastController extends \BaseController
 
         return Redirect::route('broadcasts.index');
     }
-
 }
