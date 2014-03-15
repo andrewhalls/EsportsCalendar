@@ -1,0 +1,112 @@
+<?php
+
+class $NAME$ extends \BaseController {
+
+    public function __construct($MODEL$Repository $repository)
+    {
+        $this->repository = $repository;
+    }
+
+	/**
+	 * Display a listing of $COLLECTION$
+	 *
+	 * @return Response
+	 */
+	public function index()
+	{
+	    $$COLLECTION$ = $this->repository->all();
+
+	    return View::make('$COLLECTION$.index', compact('$COLLECTION$'));
+	}
+
+	/**
+	 * Show the form for creating a new $RESOURCE$
+	 *
+	 * @return Response
+	 */
+	public function create()
+	{
+        return View::make('$COLLECTION$.create');
+	}
+
+	/**
+	 * Store a newly created $RESOURCE$ in storage.
+	 *
+	 * @return Response
+	 */
+	public function store()
+	{
+	    $validator = Validator::make($data = Input::all(), $this->repository->getRules());
+
+	    if ($validator->fails())
+	    {
+	        return Redirect::back()->withErrors($validator)->withInput();
+	    }
+
+	    $this->repository->create($data);
+
+	    return Redirect::route('$COLLECTION$.index');
+	}
+
+	/**
+	 * Display the specified $RESOURCE$.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function show($id)
+	{
+	    $$RESOURCE$ = $this->repository->findOrFail($id);
+
+	    return View::make('$COLLECTION$.show', compact('$RESOURCE$'));
+	}
+
+	/**
+	 * Show the form for editing the specified $RESOURCE$.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function edit($id)
+	{
+		$$RESOURCE$ = $this->repository->find($id);
+
+		return View::make('$COLLECTION$.edit', compact('$RESOURCE$'));
+	}
+
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function update($id)
+	{
+		$$RESOURCE$ = $this->repository->findOrFail($id);
+
+		$validator = Validator::make($data = Input::all(), $this->repository->getRules());
+
+        if ($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator)->withInput();
+        }
+
+		$$RESOURCE$->update($data);
+
+		return Redirect::route('$COLLECTION$.index');
+	}
+
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function destroy($id)
+	{
+		$this->repository->destroy($id);
+
+		return Redirect::route('$COLLECTION$.index');
+	}
+
+}
