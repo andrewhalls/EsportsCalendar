@@ -6,11 +6,16 @@
 		"phpunit/phpunit": "3.7.*",
 		"phpspec/phpspec": "2.0.*@dev",
         "benconstable/phpspec-laravel": "*",
+        "behat/behat": "2.5.*",
+        "behat/mink": "*",
+        "behat/mink-extension":"*",
+        "behat/mink-goutte-driver":"*",
         "zizaco/factory-muff": "dev-master"
 	},
 	"require-dev": {
         "way/generators": "2.*",
-        "fzaninotto/faker": "v1.3.0"
+        "fzaninotto/faker": "v1.3.0",
+        "guzzle/guzzle": "2.4.*"
 	},
 	"autoload": {
 		"classmap": [

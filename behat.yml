@@ -1,0 +1,11 @@
+default:
+  paths:
+    features: app/tests/acceptance
+    bootstrap: %behat.paths.features%/bootstrap
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      base_url: netdev.gamingcalendar.com
+  context:
+      parameters:
+          base_url: http://netdev.gamingcalendar.com

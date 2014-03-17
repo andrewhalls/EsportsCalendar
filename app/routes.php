@@ -72,7 +72,35 @@ Route::get('users/{id}/unban', 'UserController@unban')->where('id', '[0-9]+');
 Route::resource('users', 'UserController');
 Route::resource('games', 'GamingCalendar\Controllers\GameController');
 
+// in application/routes.php
+Route::post('broadcast', function()
+    {
+        $data = GamingCalendar\models\Broadcast::create(Input::all());
 
+        return Response::make($data->toJson(), 200,
+            array('Content-Type' => 'application/json'));
+    });
+
+Route::get('broadcast', function()
+    {
+        $data = GamingCalendar\models\Broadcast::all();
+        return Response::make($data, 200,
+            array('Content-Type' => 'application/json'));
+    });
+
+Route::get('broadcast/{id}', function($id)
+    {
+        $data = GamingCalendar\models\Broadcast::find($id);
+        return Response::make($data, 200,
+            array('Content-Type' => 'application/json'));
+    });
+
+Route::delete('broadcast/{id}', function($id)
+    {
+        $data = GamingCalendar\models\Broadcast::find($id);
+        return Response::make(json_encode(['status' => var_export($data->delete(), true)]), 200,
+            array('Content-Type' => 'application/json'));
+    });
 
 // App::missing(function($exception)
 // {

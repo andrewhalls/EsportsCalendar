@@ -14,7 +14,7 @@ class Broadcast extends \Eloquent
     ];
 
     // Don't forget to fill this array
-    protected $fillable = [];
+    protected $guarded = [];
     protected $table = 'broadcast';
     public $timestamps = true;
     protected $softDelete = true;

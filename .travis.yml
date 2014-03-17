@@ -9,7 +9,7 @@ php:
 before_script:
   - composer install --prefer-dist --no-interaction
 
-script: vendor/bin/phpspec run
+script: vendor/bin/behat
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar

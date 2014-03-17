@@ -15,7 +15,6 @@ class DatabaseSeeder extends Seeder {
 		$this->call('SentryGroupSeeder');
 		$this->call('SentryUserSeeder');
 		$this->call('SentryUserGroupSeeder');
-        $this->call('PagesTableSeeder');
 	}
 
 }
