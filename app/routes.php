@@ -15,6 +15,16 @@
  * TODO Move to Service Provider
  */
 App::bind('GamingCalendar\Repos\Game\GameRepository', 'GamingCalendar\Repos\Game\DbGameRepository');
+App::bind('GamingCalendar\Repos\Broadcast\BroadcastRepository', 'GamingCalendar\Repos\Broadcast\DbBroadcastRepository');
+
+
+Route::get(
+    '/',
+    array(
+        'as' => 'home',
+        'uses' => 'GamingCalendar\Controllers\HomeController@index'
+    )
+);
 
 // Session Routes
 Route::get('login', array('as' => 'login', 'uses' => 'SessionController@create'));
@@ -62,15 +72,6 @@ Route::get('users/{id}/unban', 'UserController@unban')->where('id', '[0-9]+');
 Route::resource('users', 'UserController');
 Route::resource('games', 'GamingCalendar\Controllers\GameController');
 
-Route::get(
-    '/',
-    array(
-        'as' => 'home',
-        function () {
-            return View::make('home');
-        }
-    )
-);
 
 
 // App::missing(function($exception)

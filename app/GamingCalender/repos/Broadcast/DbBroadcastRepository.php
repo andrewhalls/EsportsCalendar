@@ -12,7 +12,7 @@ class DbBroadcastRepository extends DbRepository implements BroadcastRepository
     /**
      * @var Broadcast
      */
-    protected $model;
+    public $model;
 
     /**
      * @param Broadcast $model
@@ -20,5 +20,52 @@ class DbBroadcastRepository extends DbRepository implements BroadcastRepository
     public function __construct(Broadcast $model)
     {
         $this->model = $model;
+    }
+
+    /**
+     * @param $days
+     * @return mixed|void
+     */
+    public function getOverview($days)
+    {
+        return $this->model
+            ->overview($days)
+            ->orderBy('start_at', 'ASC')
+            ->get();
+    }
+
+    public function getBroadcasting()
+    {
+        return $this->model
+            ->broadcasting
+            ->get();
+    }
+
+    /**
+     * Get an overview of upcoming  broadcasts
+     *
+     * @param $days
+     * @return mixed
+     */
+    public function getUpcoming($days = 3)
+    {
+        return $this->model
+            ->upcoming($days)
+            ->orderBy('start_at', 'ASC')
+            ->get();
+    }
+
+    /**
+     * Get an overview of completed broadcasts
+     *
+     * @param $days
+     * @return mixed
+     */
+    public function getCompleted($days = 3)
+    {
+        return $this->model
+            ->completed($days)
+            ->orderBy('start_at', 'ASC')
+            ->get();
     }
 }

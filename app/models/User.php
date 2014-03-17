@@ -3,6 +3,9 @@
 use Illuminate\Auth\Reminders\RemindableInterface;
 use Illuminate\Auth\UserInterface;
 
+/**
+ * Class User
+ */
 class User extends \Cartalyst\Sentry\Users\Eloquent\User implements UserInterface, RemindableInterface
 {
 

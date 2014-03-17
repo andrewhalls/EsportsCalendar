@@ -107,6 +107,7 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/http-foundation" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/zizaco/factory-muff" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/finder" />
           <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
@@ -200,6 +201,7 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/http-foundation" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/zizaco/factory-muff" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/finder" />
           <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
