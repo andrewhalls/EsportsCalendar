@@ -4,7 +4,6 @@ use Illuminate\Support\ServiceProvider;
 use Authority\Repo\Session\SentrySession;
 use Authority\Repo\User\SentryUser;
 use Authority\Repo\Group\SentryGroup;
-use Cartalyst\Sentry\Sentry;
 
 class RepoServiceProvider extends ServiceProvider {
 

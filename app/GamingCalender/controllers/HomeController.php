@@ -2,8 +2,6 @@
 
 use GamingCalendar\Repos\Broadcast\BroadcastRepository;
 use View;
-use Redirect;
-use Validator;
 
 /**
  * Class BroadcastController

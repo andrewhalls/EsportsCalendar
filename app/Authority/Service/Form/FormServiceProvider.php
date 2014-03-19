@@ -18,8 +18,8 @@ use Authority\Service\Form\ChangePassword\ChangePasswordFormLaravelValidator;
 use Authority\Service\Form\SuspendUser\SuspendUserForm;
 use Authority\Service\Form\SuspendUser\SuspendUserFormLaravelValidator;
 
-class FormServiceProvider extends ServiceProvider {
-
+class FormServiceProvider extends ServiceProvider
+{
     /**
      * Register the binding
      *

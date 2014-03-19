@@ -144,8 +144,8 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     /**
      * createAdminUser
      */
-    public function createAdminUser()    {
-
+    public function createAdminUser()
+    {
         // Create the user
         $user = Sentry::createUser(
             array(

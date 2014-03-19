@@ -107,8 +107,3 @@ Route::delete('broadcast/{id}', function($id)
 //     App::abort(404, 'Page not found');
 //     //return Response::view('errors.missing', array(), 404);
 // });
-
-
-
-
-

@@ -469,5 +469,3 @@ class UserController extends BaseController
 
 
 }
-
-	

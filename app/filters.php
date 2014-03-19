@@ -11,15 +11,13 @@
 |
 */
 
-App::before(function($request)
-{
-	//
+App::before(function ($request) {
+    //
 });
 
 
-App::after(function($request, $response)
-{
-	//
+App::after(function ($request, $response) {
+    //
 });
 
 /*
@@ -83,9 +81,8 @@ Route::filter('inGroup', function($route, $request, $value)
 |
 */
 
-Route::filter('guest', function()
-{
-	if (Auth::check()) return Redirect::to('/');
+Route::filter('guest', function () {
+    if (Auth::check()) return Redirect::to('/');
 });
 
 /*
@@ -99,34 +96,30 @@ Route::filter('guest', function()
 |
 */
 
-Route::filter('csrf', function()
-{
-	// var_dump($_SESSION);
+Route::filter('csrf', function () {
+    // var_dump($_SESSION);
  //            var_dump($_POST);
  //            die();
 
-	// TODO: Rewrite this tree of conditionals
-	if (Session::token() !== Input::get('_token') || Session::token()===null || Input::get('_token')===null)
-	{
-		// Session token and form tokens do not match or one is empty
-		if(App::environment() === 'testing')
-		{
-			// We only want to allow CSRF override if we're running tests
-			if(Input::get('IgnoreCSRFTokenError')===true) 
-			{
-				// Allow CSRF override in testing environment
-				return;
-			} else {
-				// Handle CSRF normally
-				throw new Illuminate\Session\TokenMismatchException;
-			}	
-		} else {
-			// @codeCoverageIgnoreStart
-			
-			// Handle CSRF normally
-			throw new Illuminate\Session\TokenMismatchException;
-			
-			// @codeCoverageIgnoreEnd
-		}
-	}
+    // TODO: Rewrite this tree of conditionals
+    if (Session::token() !== Input::get('_token') || Session::token()===null || Input::get('_token')===null) {
+        // Session token and form tokens do not match or one is empty
+        if(App::environment() === 'testing') {
+            // We only want to allow CSRF override if we're running tests
+            if(Input::get('IgnoreCSRFTokenError')===true) {
+                // Allow CSRF override in testing environment
+                return;
+            } else {
+                // Handle CSRF normally
+                throw new Illuminate\Session\TokenMismatchException;
+            }
+        } else {
+            // @codeCoverageIgnoreStart
+
+            // Handle CSRF normally
+            throw new Illuminate\Session\TokenMismatchException;
+
+            // @codeCoverageIgnoreEnd
+        }
+    }
 });
