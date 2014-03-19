@@ -25,7 +25,7 @@ return array(
     |
     */
 
-    'default' => 'sqlite',
+    'default' => 'mysql',
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -53,7 +53,7 @@ return array(
         'mysql' => array(
             'driver' => 'mysql',
             'host' => 'localhost',
-            'database' => 'database',
+            'database' => 'raffle',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',

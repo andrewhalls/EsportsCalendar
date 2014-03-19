@@ -7,9 +7,14 @@ php:
   - hhvm
 
 before_script:
-  - sudo sed -i -e "/DocumentRoot/i\ServerName knpu_qa.l" /etc/apache2/sites-available/default
-  - echo "127.0.0.1 netdev.gamingcalendar.com" | sudo tee -a /etc/hosts
-  - sudo /etc/init.d/apache2 restart
+  # Install php packages
+ # - sudo apt-get update > /dev/null
+#  - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5 php5-curl php5-mysql php5-intl
+  # Create VirtualHost
+#  - sudo sed -i -e "s,/var/www,$(pwd)/web,g" /etc/apache2/sites-available/default
+#  - sudo sed -i -e "/DocumentRoot/i\ServerName netdev.gamingcalendar.com" /etc/apache2/sites-available/default
+#  - echo "127.0.0.1 netdev.gamingcalendar.com" | sudo tee -a /etc/hosts
+#  - sudo /etc/init.d/apache2 restart
   - composer install --prefer-dist --no-interaction
 
 script: vendor/bin/behat

@@ -73,37 +73,182 @@ Route::resource('users', 'UserController');
 Route::resource('games', 'GamingCalendar\Controllers\GameController');
 
 // in application/routes.php
-Route::post('broadcast', function()
-    {
+/**
+ * Broadcast
+ */
+Route::post(
+    'broadcast',
+    function () {
         $data = GamingCalendar\models\Broadcast::create(Input::all());
 
-        return Response::make($data->toJson(), 200,
-            array('Content-Type' => 'application/json'));
-    });
+        return Response::make(
+            $data->toJson(),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
 
-Route::get('broadcast', function()
-    {
+Route::get(
+    'broadcast',
+    function () {
         $data = GamingCalendar\models\Broadcast::all();
-        return Response::make($data, 200,
-            array('Content-Type' => 'application/json'));
-    });
+        return Response::make(
+            $data,
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
 
-Route::get('broadcast/{id}', function($id)
-    {
+Route::get(
+    'broadcast/{id}',
+    function ($id) {
         $data = GamingCalendar\models\Broadcast::find($id);
-        return Response::make($data, 200,
-            array('Content-Type' => 'application/json'));
-    });
 
-Route::delete('broadcast/{id}', function($id)
-    {
+
+
+        if ($data == false) {
+            return Response::make(json_encode(['message' => 'Sorry, we cannot find this broadcast.']), 404);
+        }
+
+        return Response::make(
+            $data,
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::delete(
+    'broadcast/{id}',
+    function ($id) {
         $data = GamingCalendar\models\Broadcast::find($id);
-        return Response::make(json_encode(['status' => var_export($data->delete(), true)]), 200,
-            array('Content-Type' => 'application/json'));
-    });
+        return Response::make(
+            json_encode(['status' => var_export($data->delete(), true)]),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
 
+/**
+ * Channel
+ */
+Route::post(
+    'channel',
+    function () {
+        $data = GamingCalendar\models\Channel::create(Input::all());
+
+        return Response::make(
+            $data->toJson(),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::get(
+    'channel',
+    function () {
+        $data = GamingCalendar\models\Channel::all();
+        return Response::make(
+            $data,
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::get(
+    'channel/{id}',
+    function ($id) {
+        $data = GamingCalendar\models\Channel::find($id);
+
+        if ($data == false) {
+            return Response::make(json_encode(['message' => 'Sorry, we cannot find this channel.']), 404);
+        }
+
+        return Response::make(
+            $data,
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::delete(
+    'channel/{id}',
+    function ($id) {
+        $data = GamingCalendar\models\Channel::find($id);
+        return Response::make(
+            json_encode(['status' => var_export($data->delete(), true)]),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+
+/**
+ * Team
+ */
+Route::post(
+    'team',
+    function () {
+        $data = GamingCalendar\models\Team::create(Input::all());
+
+        return Response::make(
+            $data->toJson(),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::get(
+    'team',
+    function () {
+        $data = GamingCalendar\models\Team::all();
+        return Response::make(
+            $data,
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::get(
+    'team/{id}',
+    function ($id) {
+        $data = GamingCalendar\models\Team::find($id);
+
+        if ($data == false) {
+            return Response::make(json_encode(['message' => 'Sorry, we cannot find this team.']), 404);
+        }
+
+        return Response::make(
+            $data,
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
+
+Route::delete(
+    'team/{id}',
+    function ($id) {
+        $data = GamingCalendar\models\Team::find($id);
+        return Response::make(
+            json_encode(['status' => var_export($data->delete(), true)]),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+    }
+);
 // App::missing(function($exception)
 // {
 //     App::abort(404, 'Page not found');
 //     //return Response::view('errors.missing', array(), 404);
 // });
+

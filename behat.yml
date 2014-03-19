@@ -9,3 +9,13 @@ default:
   context:
       parameters:
           base_url: http://netdev.gamingcalendar.com
+
+          parameters:
+          # URL to use against the web server in the features
+          url: http://localhost:8888
+
+          # Path to the document root
+          documentRoot: public
+
+          # How many seconds will we allow the httpd to use when starting?
+          timeout: 1
