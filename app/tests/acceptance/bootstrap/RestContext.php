@@ -8,14 +8,14 @@ use Symfony\Component\Yaml\Yaml;
 class RestContext extends BehatContext
 {
 
-    private $_restObject        = null;
-    private $_restObjectType    = null;
-    private $_restObjectMethod  = 'get';
-    private $_client            = null;
-    private $_response          = null;
-    private $_requestUrl        = null;
+    private $_restObject = null;
+    private $_restObjectType = null;
+    private $_restObjectMethod = 'get';
+    private $_client = null;
+    private $_response = null;
+    private $_requestUrl = null;
 
-    private $_parameters           = array();
+    private $_parameters = array();
 
     /**
      * Initializes context.
@@ -25,8 +25,8 @@ class RestContext extends BehatContext
     {
         // Initialize your context here
 
-        $this->_restObject  = new stdClass();
-        $this->_client      = new Guzzle\Service\Client();
+        $this->_restObject = new stdClass();
+        $this->_client = new Guzzle\Service\Client();
         $this->_parameters = $parameters;
     }
 
@@ -48,7 +48,7 @@ class RestContext extends BehatContext
      */
     public function thatIWantToMakeANew($objectType)
     {
-        $this->_restObjectType   = ucwords(strtolower($objectType));
+        $this->_restObjectType = ucwords(strtolower($objectType));
         $this->_restObjectMethod = 'post';
     }
 
@@ -57,7 +57,7 @@ class RestContext extends BehatContext
      */
     public function thatIWantToFindA($objectType)
     {
-        $this->_restObjectType   = ucwords(strtolower($objectType));
+        $this->_restObjectType = ucwords(strtolower($objectType));
         $this->_restObjectMethod = 'get';
     }
 
@@ -66,7 +66,7 @@ class RestContext extends BehatContext
      */
     public function thatIWantToDeleteA($objectType)
     {
-        $this->_restObjectType   = ucwords(strtolower($objectType));
+        $this->_restObjectType = ucwords(strtolower($objectType));
         $this->_restObjectMethod = 'delete';
     }
 
@@ -83,24 +83,30 @@ class RestContext extends BehatContext
      */
     public function iRequest($pageUrl)
     {
-        $baseUrl          = $this->getParameter('base_url');
-        $this->_requestUrl  = $baseUrl.$pageUrl;
+        $baseUrl = $this->getParameter('base_url');
+        $this->_requestUrl = $baseUrl . $pageUrl;
 
         switch (strtoupper($this->_restObjectMethod)) {
             case 'GET':
-                $response = $this->_client
-                    ->get($this->_requestUrl.'/'.$this->_restObject->id)
-                    ->send();
+                try {
+                    $response = $this->_client
+                        ->get($this->_requestUrl . '/' . $this->_restObject->id)
+                        ->send();
+                } catch (BadResponseException $e) {
+                    $response = $e->getResponse();
+                } catch (ServerErrorResponseException $e) {
+                    $response = $e->getResponse();
+                }
                 break;
             case 'POST':
                 $postFields = (array)$this->_restObject;
                 $response = $this->_client
-                    ->post($this->_requestUrl,null,$postFields)
+                    ->post($this->_requestUrl, null, $postFields)
                     ->send();
                 break;
             case 'DELETE':
                 $response = $this->_client
-                    ->delete($this->_requestUrl.'/'.$this->_restObject->id)
+                    ->delete($this->_requestUrl . '/' . $this->_restObject->id)
                     ->send();
                 break;
         }
@@ -128,7 +134,7 @@ class RestContext extends BehatContext
 
         if (!empty($data)) {
             if (!isset($data->$propertyName)) {
-                throw new Exception("Property '".$propertyName."' is not set!\n");
+                throw new Exception("Property '" . $propertyName . "' is not set!\n");
             }
         } else {
             throw new Exception("Response was not JSON\n" . $this->_response->getBody(true));
@@ -144,10 +150,10 @@ class RestContext extends BehatContext
 
         if (!empty($data)) {
             if (!isset($data->$propertyName)) {
-                throw new Exception("Property '".$propertyName."' is not set!\n");
+                throw new Exception("Property '" . $propertyName . "' is not set!\n");
             }
             if ($data->$propertyName !== $propertyValue) {
-                throw new \Exception('Property value mismatch! (given: '.$propertyValue.', match: '.$data->$propertyName.')');
+                throw new \Exception('Property value mismatch! (given: ' . $propertyValue . ', match: ' . $data->$propertyName . ')');
             }
         } else {
             throw new Exception("Response was not JSON\n" . $this->_response->getBody(true));
@@ -157,19 +163,19 @@ class RestContext extends BehatContext
     /**
      * @Given /^the type of the "([^"]*)" property is ([^"]*)$/
      */
-    public function theTypeOfThePropertyIsNumeric($propertyName,$typeString)
+    public function theTypeOfThePropertyIsNumeric($propertyName, $typeString)
     {
         $data = json_decode($this->_response->getBody(true));
 
         if (!empty($data)) {
             if (!isset($data->$propertyName)) {
-                throw new Exception("Property '".$propertyName."' is not set!\n");
+                throw new Exception("Property '" . $propertyName . "' is not set!\n");
             }
             // check our type
             switch (strtolower($typeString)) {
                 case 'numeric':
                     if (!is_numeric($data->$propertyName)) {
-                        throw new Exception("Property '".$propertyName."' is not of the correct type: ".$theTypeOfThePropertyIsNumeric."!\n");
+                        throw new Exception("Property '" . $propertyName . "' is not of the correct type: " . $theTypeOfThePropertyIsNumeric . "!\n");
                     }
                     break;
             }
@@ -185,8 +191,8 @@ class RestContext extends BehatContext
     public function theResponseStatusCodeShouldBe($httpStatus)
     {
         if ((string)$this->_response->getStatusCode() !== $httpStatus) {
-            throw new \Exception('HTTP code does not match '.$httpStatus.
-                ' (actual: '.$this->_response->getStatusCode().')');
+            throw new \Exception('HTTP code does not match ' . $httpStatus .
+                ' (actual: ' . $this->_response->getStatusCode() . ')');
         }
     }
 
@@ -196,7 +202,7 @@ class RestContext extends BehatContext
     public function echoLastResponse()
     {
         $this->printDebug(
-            $this->_requestUrl."\n\n".
+            $this->_requestUrl . "\n\n" .
             $this->_response
         );
     }

@@ -1,11 +1,7 @@
-# features/user.feature
-Feature: Testing the RESTfulness of the Index controller
-  Let's see how RESTish this is
+Feature: Testing RESTful Channel.
 
-  
-	Scenario: Creating a new Channel
+Scenario: Creating a new Channel
 		Given that I want to make a new "Channel"
-		And that its "name" is "ESL TV"
 		And that its "url" is "http://google.com"
 		When I request "/channel"
 		And the response has a "id" property
@@ -37,4 +33,3 @@ Feature: Testing the RESTfulness of the Index controller
 		And that its "id" is "1"
 		When I request "/channel"
 		Then the response status code should be 404
-		And the "message" property equals "Sorry, we cannot find this Channel."

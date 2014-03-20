@@ -106,8 +106,6 @@ Route::get(
     function ($id) {
         $data = GamingCalendar\models\Broadcast::find($id);
 
-
-
         if ($data == false) {
             return Response::make(json_encode(['message' => 'Sorry, we cannot find this broadcast.']), 404);
         }
@@ -124,6 +122,15 @@ Route::delete(
     'broadcast/{id}',
     function ($id) {
         $data = GamingCalendar\models\Broadcast::find($id);
+
+        if ($data == false) {
+            return Response::make(
+                json_encode(['status' => 'true']),
+                200,
+                array('Content-Type' => 'application/json')
+            );
+        }
+
         return Response::make(
             json_encode(['status' => var_export($data->delete(), true)]),
             200,
@@ -181,6 +188,15 @@ Route::delete(
     'channel/{id}',
     function ($id) {
         $data = GamingCalendar\models\Channel::find($id);
+
+        if ($data == false) {
+            return Response::make(
+                json_encode(['status' => 'true']),
+                200,
+                array('Content-Type' => 'application/json')
+            );
+        }
+
         return Response::make(
             json_encode(['status' => var_export($data->delete(), true)]),
             200,
@@ -239,6 +255,15 @@ Route::delete(
     'team/{id}',
     function ($id) {
         $data = GamingCalendar\models\Team::find($id);
+
+        if ($data == false) {
+            return Response::make(
+                json_encode(['status' => 'true']),
+                200,
+                array('Content-Type' => 'application/json')
+            );
+        }
+
         return Response::make(
             json_encode(['status' => var_export($data->delete(), true)]),
             200,

@@ -19,3 +19,8 @@ default:
 
           # How many seconds will we allow the httpd to use when starting?
           timeout: 1
+          paths:
+              base:      %behat.paths.base%      # An absolute path under which closured step/hook definitions sit;
+              bootstrap: app/tests/acceptance/bootstrap      # Not in use. Location to load more subcontext instances from.
+              steps:     app/tests/acceptance/steps          # Location to load closured step definitions from.
+              hooks:     app/tests/acceptance/support        # Location to load closured hook definitions from.

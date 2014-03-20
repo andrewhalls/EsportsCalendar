@@ -418,18 +418,3 @@
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1)
 }
-
-body {
-    background-image: url('/img/mochaGrunge.png');
-}
-
-.match {
-    position: relative;
-    padding-left: 20px;
-    clear: both;
-    overflow: hidden;
-    height: 280px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 60px;
-}

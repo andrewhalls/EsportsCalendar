@@ -1,6 +1,4 @@
-# features/user.feature
-Feature: Testing the RESTfulness of the Index controller
-  Let's see how RESTish this is
+Feature: Testing RESTful Broadcast.
 
   Scenario: Creating a new Broadcast
     Given that I want to make a new "Broadcast"
@@ -9,7 +7,6 @@ Feature: Testing the RESTfulness of the Index controller
     And the response has a "id" property
     And the type of the "id" property is numeric
     Then the response status code should be 200
-	And the "message" property equals "Team Successfully Create"
 
   Scenario: Finding a Broadcast
     Given that I want to find a "Broadcast"

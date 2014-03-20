@@ -1,8 +1,5 @@
-# features/user.feature
-Feature: Testing the RESTfulness of the Index controller
-  Let's see how RESTish this is
+Feature: Testing RESTful Team.
 
-  
 	Scenario: Creating a new Team
 		Given that I want to make a new "Team"
 		And that its "name" is "Fnatic"
@@ -35,4 +32,3 @@ Feature: Testing the RESTfulness of the Index controller
 		And that its "id" is "1"
 		When I request "/team"
 		Then the response status code should be 404
-		And the "message" property equals "Sorry, we cannot find this team."
