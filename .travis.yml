@@ -7,18 +7,25 @@ php:
   - hhvm
 
 before_script:
-  # Install php packages
- # - sudo apt-get update > /dev/null
-#  - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5 php5-curl php5-mysql php5-intl
-  # Create VirtualHost
-#  - sudo sed -i -e "s,/var/www,$(pwd)/web,g" /etc/apache2/sites-available/default
-#  - sudo sed -i -e "/DocumentRoot/i\ServerName netdev.gamingcalendar.com" /etc/apache2/sites-available/default
-#  - echo "127.0.0.1 netdev.gamingcalendar.com" | sudo tee -a /etc/hosts
-#  - sudo /etc/init.d/apache2 restart
-  - composer install --prefer-dist --no-interaction
+  - sudo apt-get install nginx
+  - pwd
+  - cat vhost.template
+  - sudo cp $TRAVIS_BUILD_DIR/vhost.template /etc/nginx/sites-enabled/netdev.gamingcalendar.com
+  - sed 's|APP_URLS|netdev.gamingcalendar.com|g;s|APP_PATH|/home/travis/build/EddyLane/DemoSubscriptionBundle|g;s|APP_NAME|netdev.gamingcalendar.com|g' --in-place /etc/nginx/sites-enabled/netdev.gamingcalendar.com
+  - cat /etc/nginx/sites-enabled/netdev.gamingcalendar.com
+
+  - composer update
+  - app/console doc:database:create
+  - app/console doc:schema:update --force
+
+  - sudo service nginx restart
+  - sudo service php5-fpm restart
 
 script: vendor/bin/behat
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
+hosts:
+  - netdev.gamingcalendar.com
