@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb7eb9b-1037-4ca1-9d48-a0809aa3bd17" name="Default" comment="Update for clock shizzle&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/netdev.myraffles.com.iml" afterPath="$PROJECT_DIR$/.idea/netdev.myraffles.com.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="netdev.myraffles.com.iws" />
@@ -737,7 +735,11 @@
       <created>1395426594120</created>
       <updated>1395426594120</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update for clock shizzle&#10;">
+      <created>1395426601904</created>
+      <updated>1395426601904</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
