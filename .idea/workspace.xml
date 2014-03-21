@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb7eb9b-1037-4ca1-9d48-a0809aa3bd17" name="Default" comment="Update for clock shizzle&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/tests/nginx.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/behat.yml" afterPath="$PROJECT_DIR$/behat.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="netdev.myraffles.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
+            <state line="9" column="2" selection-start="72" selection-end="72" vertical-scroll-proportion="0.34848484" vertical-offset="0" max-vertical-offset="667">
               <folding />
             </state>
           </provider>
@@ -70,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="behat.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="behat.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/behat.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="374" selection-end="374" vertical-scroll-proportion="0.54208755" vertical-offset="0" max-vertical-offset="713">
+            <state line="14" column="31" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="713">
               <folding />
             </state>
           </provider>
@@ -140,9 +137,9 @@
         <option value="$PROJECT_DIR$/vhost.template" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Game.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/app/tests/nginx.conf" />
         <option value="$PROJECT_DIR$/behat.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -1053,16 +1050,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/behat.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
+        <state line="14" column="31" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="713">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/behat.yml">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="374" selection-end="374" vertical-scroll-proportion="0.54208755" vertical-offset="0" max-vertical-offset="713">
+        <state line="9" column="2" selection-start="72" selection-end="72" vertical-scroll-proportion="0.34848484" vertical-offset="0" max-vertical-offset="667">
           <folding />
         </state>
       </provider>
