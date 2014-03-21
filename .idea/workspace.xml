@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5eb7eb9b-1037-4ca1-9d48-a0809aa3bd17" name="Default" comment="" />
+    <list default="true" id="5eb7eb9b-1037-4ca1-9d48-a0809aa3bd17" name="Default" comment="Update for clock shizzle&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/netdev.myraffles.com.iml" afterPath="$PROJECT_DIR$/.idea/netdev.myraffles.com.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="netdev.myraffles.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,10 +21,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/netdev.gamingcalendar.com$netdev_gamingcalendar_com__1_.coverage" NAME="netdev.gamingcalendar.com (1) Coverage Results" MODIFIED="1394913707255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/netdev.myraffles.com$netdev_myraffles_com.coverage" NAME="netdev.myraffles.com Coverage Results" MODIFIED="1394292525242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/netdev.gamingcalendar.com$netdev_gamingcalendar_com.coverage" NAME="netdev.gamingcalendar.com Coverage Results" MODIFIED="1394913649295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/netdev.myraffles.com$tests.coverage" NAME="tests Coverage Results" MODIFIED="1394292593443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/netdev.myraffles.com$netdev_myraffles_com.coverage" NAME="netdev.myraffles.com Coverage Results" MODIFIED="1394292525242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="../../../../webroot/netdev.myraffles.com/phpunit.xml" NAME="phpunit.xml" MODIFIED="1390242488197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/netdev.myraffles.com$tests.coverage" NAME="tests Coverage Results" MODIFIED="1394292593443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/netdev.gamingcalendar.com$netdev_myraffles_com.coverage" NAME="netdev.myraffles.com Coverage Results" MODIFIED="1394909771992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageOptionsProvider">
@@ -41,7 +45,7 @@
       <file leaf-file-name="FeatureContext.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/tests/acceptance/bootstrap/FeatureContext.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="20" selection-start="468" selection-end="468" vertical-scroll-proportion="-10.461538" vertical-offset="142" max-vertical-offset="1012">
+            <state line="18" column="20" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1012">
               <folding />
             </state>
           </provider>
@@ -50,10 +54,8 @@
       <file leaf-file-name="RestContext.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/tests/acceptance/bootstrap/RestContext.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="7" selection-start="3201" selection-end="3201" vertical-scroll-proportion="-6.1923075" vertical-offset="2484" max-vertical-offset="4922">
-              <folding>
-                <element signature="e#6#43#0" expanded="true" />
-              </folding>
+            <state line="115" column="7" selection-start="3201" selection-end="3201" vertical-scroll-proportion="0.0" vertical-offset="2645" max-vertical-offset="4922">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,7 +63,7 @@
       <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.9019608" vertical-offset="276" max-vertical-offset="851">
+            <state line="10" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="851">
               <folding>
                 <marker date="1391452072000" expanded="true" signature="178:305" placeholder="..." />
                 <marker date="1391452072000" expanded="true" signature="204:298" placeholder="..." />
@@ -73,32 +75,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/broadcasts/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="32" selection-start="6880" selection-end="6880" vertical-scroll-proportion="-0.7740741" vertical-offset="4721" max-vertical-offset="21919">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#8;n#!!top" expanded="true" />
-              </folding>
+            <state line="178" column="32" selection-start="6880" selection-end="6880" vertical-scroll-proportion="12.294118" vertical-offset="4721" max-vertical-offset="21919">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="22" selection-start="654" selection-end="654" vertical-scroll-proportion="0.8298969" vertical-offset="0" max-vertical-offset="828">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vhost.template" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhost.template">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="8" selection-start="347" selection-end="347" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="989">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,16 +114,7 @@
       <file leaf-file-name="bootstrap-theme.min.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/bootstrap-theme.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="420" column="0" selection-start="20006" selection-end="20006" vertical-scroll-proportion="0.0" vertical-offset="9217" max-vertical-offset="9798">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="behat.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/behat.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="713">
+            <state line="420" column="0" selection-start="20006" selection-end="20006" vertical-scroll-proportion="0.0" vertical-offset="9660" max-vertical-offset="9798">
               <folding />
             </state>
           </provider>
@@ -155,10 +145,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/spec/GamingCalendar/Controllers/BroadcastControllerSpec.php" />
         <option value="$PROJECT_DIR$/app/spec/GamingCalendar/Controllers/ChannelControllerSpec.php" />
         <option value="$PROJECT_DIR$/app/spec/GamingCalendar/Controllers/GenreControllerSpec.php" />
         <option value="$PROJECT_DIR$/app/spec/GamingCalendar/Controllers/TeamControllerSpec.php" />
@@ -195,7 +187,6 @@
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_03_19_180707_create_team_table.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/app/tests/acceptance/bootstrap/FeatureContext.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Game.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Channel.php" />
@@ -209,6 +200,8 @@
         <option value="$PROJECT_DIR$/app/tests/acceptance/bootstrap/RestContext.php" />
         <option value="$PROJECT_DIR$/public/css/bootstrap-theme.min.css" />
         <option value="$PROJECT_DIR$/app/views/broadcasts/index.blade.php" />
+        <option value="$PROJECT_DIR$/vhost.template" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -378,7 +371,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -404,6 +397,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Tests" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -582,9 +578,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -669,10 +662,6 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
       <option name="myOutputFile" />
       <option name="myOpenOutputFile" value="false" />
@@ -687,6 +676,10 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -740,6 +733,11 @@
       <created>1390416847531</created>
       <updated>1390416847531</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update for clock shizzle&#10;">
+      <created>1395426594120</created>
+      <updated>1395426594120</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -764,9 +762,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33045357" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.02768903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -780,14 +779,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22678186" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22678186" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12849462" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="PHPStats" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39647576" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39647576" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -802,6 +801,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Update for clock shizzle&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update for clock shizzle&#10;" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -819,13 +822,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/tests/acceptance/broadcast.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/controllers/GameControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="7" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1288" />
@@ -907,11 +903,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/storage/logs/laravel.log">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="3640" column="122" selection-start="562595" selection-end="562595" vertical-scroll-proportion="0.7989865" vertical-offset="83247" max-vertical-offset="84042" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/testing/database.php">
@@ -993,11 +989,6 @@
         <state line="55" column="2" selection-start="1681" selection-end="1753" vertical-scroll-proportion="-13.230769" vertical-offset="714" max-vertical-offset="1702" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="613" selection-end="613" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="667" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="10" selection-start="308" selection-end="332" vertical-scroll-proportion="-13.269231" vertical-offset="23" max-vertical-offset="2001">
@@ -1028,16 +1019,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/acceptance/channel.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="943">
-          <folding />
-        </state>
+        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="943" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/acceptance/search.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/behat.yml">
@@ -1063,30 +1050,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/acceptance/broadcast.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
-          <folding />
-        </state>
+        <state line="0" column="35" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/acceptance/bootstrap/FeatureContext.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="468" selection-end="468" vertical-scroll-proportion="-10.461538" vertical-offset="142" max-vertical-offset="1012">
+        <state line="18" column="20" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1012">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/acceptance/bootstrap/RestContext.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="7" selection-start="3201" selection-end="3201" vertical-scroll-proportion="-6.1923075" vertical-offset="2484" max-vertical-offset="4922">
-          <folding>
-            <element signature="e#6#43#0" expanded="true" />
-          </folding>
+        <state line="115" column="7" selection-start="3201" selection-end="3201" vertical-scroll-proportion="0.0" vertical-offset="2645" max-vertical-offset="4922">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.9019608" vertical-offset="276" max-vertical-offset="851">
+        <state line="10" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="851">
           <folding>
             <marker date="1391452072000" expanded="true" signature="178:305" placeholder="..." />
             <marker date="1391452072000" expanded="true" signature="204:298" placeholder="..." />
@@ -1120,29 +1103,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/broadcasts/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="32" selection-start="6880" selection-end="6880" vertical-scroll-proportion="-0.7740741" vertical-offset="4721" max-vertical-offset="21919">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#8;n#!!top" expanded="true" />
-          </folding>
+        <state line="178" column="32" selection-start="6880" selection-end="6880" vertical-scroll-proportion="12.294118" vertical-offset="4721" max-vertical-offset="21919">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhost.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="347" selection-end="347" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="654" selection-end="654" vertical-scroll-proportion="0.8298969" vertical-offset="0" max-vertical-offset="828">
+          <folding />
         </state>
       </provider>
     </entry>
