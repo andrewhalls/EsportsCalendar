@@ -7,9 +7,14 @@ php:
   - hhvm
 
 before_script:
-  - composer update
+ - php-cgi --version
+  - dir /home/travis/.phpenv/versions -A
+  - sudo apt-get -qq install nginx
+  - php-cgi -b 127.0.0.1:9000 &
+  - sudo nginx -c app/tests/nginx.conf -p "$PWD/"
+  - composer self-update -n
+  - composer install --dev -n --prefer-source
   - mysql -e "create database calendar"
-  - php artisan serve --port=8080
 
 script: vendor/bin/behat
 

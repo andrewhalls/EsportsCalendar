@@ -5,14 +5,14 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       goutte: ~
-      base_url: localhost:8080
+      base_url: localhost
   context:
       parameters:
-          base_url: http://localhost:8080
+          base_url: http://localhost
 
           parameters:
           # URL to use against the web server in the features
-          url: http://localhost:8888
+          url: http://localhost
 
           # Path to the document root
           documentRoot: public
