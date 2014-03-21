@@ -7,25 +7,12 @@ php:
   - hhvm
 
 before_script:
-  - sudo apt-get install nginx
-  - pwd
-  - cat vhost.template
-  - sudo cp $TRAVIS_BUILD_DIR/vhost.template /etc/nginx/sites-enabled/netdev.gamingcalendar.com
-  - sed 's|APP_URLS|netdev.gamingcalendar.com|g;s|APP_PATH|/home/travis/build/EddyLane/DemoSubscriptionBundle|g;s|APP_NAME|netdev.gamingcalendar.com|g' --in-place /etc/nginx/sites-enabled/netdev.gamingcalendar.com
-  - cat /etc/nginx/sites-enabled/netdev.gamingcalendar.com
-
   - composer update
-  - app/console doc:database:create
-  - app/console doc:schema:update --force
-
-  - sudo service nginx restart
-  - sudo service php5-fpm restart
+  - mysql -e "create database calendar"
+  - php artisan serve --port=8080
 
 script: vendor/bin/behat
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
-
-hosts:
-  - netdev.gamingcalendar.com

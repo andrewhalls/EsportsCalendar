@@ -5,10 +5,10 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       goutte: ~
-      base_url: netdev.gamingcalendar.com
+      base_url: localhost:8080
   context:
       parameters:
-          base_url: http://netdev.gamingcalendar.com
+          base_url: http://localhost:8080
 
           parameters:
           # URL to use against the web server in the features

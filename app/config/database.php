@@ -53,7 +53,7 @@ return array(
         'mysql' => array(
             'driver' => 'mysql',
             'host' => 'localhost',
-            'database' => 'raffle',
+            'database' => 'calendar',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
