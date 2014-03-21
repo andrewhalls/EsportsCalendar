@@ -6,7 +6,6 @@
  */
 class Game extends \Eloquent
 {
-
     public $table = 'game';
 
     // Add your validation rules here
