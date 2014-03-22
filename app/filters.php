@@ -31,42 +31,33 @@ App::after(function ($request, $response) {
 |
 */
 
-Route::filter('auth', function()
-{
-	if (!Sentry::check()) return Redirect::route('login');
+Route::filter('auth', function () {
+    if (!Sentry::check()) return Redirect::route('login');
 });
 
-Route::filter('inGroup', function($route, $request, $value)
-{
-	if (!Sentry::check()) return Redirect::route('login');
+Route::filter('inGroup', function ($route, $request, $value) {
+    if (!Sentry::check()) return Redirect::route('login');
 
-	// we need to determine if a non admin user 
-	// is trying to access their own account.
+    // we need to determine if a non admin user
+    // is trying to access their own account.
     $userId = Route::input('users');
 
-	try
-	{
-		$user = Sentry::getUser();
-		 
-		$group = Sentry::findGroupByName($value);
-		 
-		if ($userId != Session::get('userId') && (! $user->inGroup($group))  )
-		{
-			Session::flash('error', trans('users.noaccess'));
-			return Redirect::route('home');
-		}
-	}
-	catch (Cartalyst\Sentry\Users\UserNotFoundException $e)
-	{
-		Session::flash('error', trans('users.notfound'));
-		return Redirect::route('login');
-	}
-	 
-	catch (Cartalyst\Sentry\Groups\GroupNotFoundException $e)
-	{
-		Session::flash('error', trans('groups.notfound'));
-		return Redirect::route('login');
-	}
+    try {
+        $user = Sentry::getUser();
+
+        $group = Sentry::findGroupByName($value);
+
+        if ($userId != Session::get('userId') && (! $user->inGroup($group))  ) {
+            Session::flash('error', trans('users.noaccess'));
+            return Redirect::route('home');
+        }
+    } catch (Cartalyst\Sentry\Users\UserNotFoundException $e) {
+        Session::flash('error', trans('users.notfound'));
+        return Redirect::route('login');
+    } catch (Cartalyst\Sentry\Groups\GroupNotFoundException $e) {
+        Session::flash('error', trans('groups.notfound'));
+        return Redirect::route('login');
+    }
 });
 // thanks to http://laravelsnippets.com/snippets/sentry-route-filters
 

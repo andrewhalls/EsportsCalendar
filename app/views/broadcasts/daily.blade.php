@@ -1063,9 +1063,8 @@ Broadcasts
 <div></div>
 <div style="margin-bottom:20px;"></div>
 </div>
-<!--  
-	The delete button uses Resftulizer.js to restfully submit with "Delete".  The "action_confirm" class triggers an optional confirm dialog.
-	Also, I have hardcoded adding the "disabled" class to the Admin group - deleting your own admin access causes problems.
+<!--
+    The delete button uses Resftulizer.js to restfully submit with "Delete".  The "action_confirm" class triggers an optional confirm dialog.
+    Also, I have hardcoded adding the "disabled" class to the Admin group - deleting your own admin access causes problems.
 -->
 @stop
-
