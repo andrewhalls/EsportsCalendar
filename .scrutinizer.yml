@@ -41,4 +41,5 @@ tools:
     php_hhvm: true
 filter:
     excluded_paths:
-        - app/tests/
+        - app/tests
+		- app/database
