@@ -3,71 +3,72 @@
 use Authority\Service\Validation\ValidableInterface;
 use Authority\Repo\User\UserInterface;
 
-class RegisterForm
-{
-    /**
-     * Form Data
-     *
-     * @var array
-     */
-    protected $data;
+class RegisterForm {
 
-    /**
-     * Validator
-     *
-     * @var \Cesario\Service\Form\ValidableInterface
-     */
-    protected $validator;
+	/**
+	 * Form Data
+	 *
+	 * @var array
+	 */
+	protected $data;
 
-    /**
-     * Session Repository
-     *
-     * @var \Cesario\Repo\Session\SessionInterface
-     */
-    protected $user;
+	/**
+	 * Validator
+	 *
+	 * @var \Cesario\Service\Form\ValidableInterface 
+	 */
+	protected $validator;
 
-    public function __construct(ValidableInterface $validator, UserInterface $user)
-    {
-        $this->validator = $validator;
-        $this->user = $user;
+	/**
+	 * Session Repository
+	 *
+	 * @var \Cesario\Repo\Session\SessionInterface 
+	 */
+	protected $user;
 
-    }
+	public function __construct(ValidableInterface $validator, UserInterface $user)
+	{
+		$this->validator = $validator;
+		$this->user = $user;
 
-    /**
+	}
+
+	/**
      * Create a new user
      *
      * @return integer
      */
     public function save(array $input)
     {
-        if( ! $this->valid($input) ) {
+        if( ! $this->valid($input) )
+        {
             return false;
         }
 
         return $this->user->store($input);
     }
 
-    /**
-     * Return any validation errors
-     *
-     * @return array
-     */
-    public function errors()
-    {
-        return $this->validator->errors();
-    }
+	/**
+	 * Return any validation errors
+	 *
+	 * @return array 
+	 */
+	public function errors()
+	{
+		return $this->validator->errors();
+	}
 
-    /**
-     * Test if form validator passes
-     *
-     * @return boolean
-     */
-    protected function valid(array $input)
-    {
+	/**
+	 * Test if form validator passes
+	 *
+	 * @return boolean 
+	 */
+	protected function valid(array $input)
+	{
 
-        return $this->validator->with($input)->passes();
-
-    }
+		return $this->validator->with($input)->passes();
+		
+	}
 
 
 }

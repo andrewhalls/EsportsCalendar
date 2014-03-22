@@ -1,19 +1,19 @@
 <?php
 
-class ExampleTest extends TestCase
-{
-    /**
-     * A basic functional test example.
-     *
-     * @return void
-     */
-    public function testBasicExample()
-    {
-        $crawler = $this->client->request('GET', '/');
+class ExampleTest extends TestCase {
 
-        $this->assertTrue($this->client->getResponse()->isOk());
+	/**
+	 * A basic functional test example.
+	 *
+	 * @return void
+	 */
+	public function testBasicExample()
+	{
+		$crawler = $this->client->request('GET', '/');
 
-        $this->assertCount(1, $crawler->filter('h1:contains("Hello World!")'));
-    }
+		$this->assertTrue($this->client->getResponse()->isOk());
+
+		$this->assertCount(1, $crawler->filter('h1:contains("Hello World!")'));
+	}
 
 }

@@ -28,9 +28,9 @@ Register
                 {{ Form::password('password_confirmation', array('class' => 'form-control', 'placeholder' => 'Confirm Password')) }}
                 {{ ($errors->has('password_confirmation') ?  $errors->first('password_confirmation') : '') }}
             </div>
-
+            
             {{ Form::submit('Register', array('class' => 'btn btn-primary')) }}
-
+            
         {{ Form::close() }}
     </div>
 </div>

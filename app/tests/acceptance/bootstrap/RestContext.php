@@ -1,5 +1,6 @@
 <?php
 use Behat\Behat\Context\BehatContext;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * Rest context.

@@ -2,18 +2,18 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Session Repository Messages
-    |--------------------------------------------------------------------------
-    */
+	/*
+	|--------------------------------------------------------------------------
+	| Session Repository Messages
+	|--------------------------------------------------------------------------
+	*/
 
-    "invalid"   => "Invalid username or password.",
+	"invalid"   => "Invalid username or password.",
 
-    "notactive" =>  "You have not yet activated this account. <a href=':url' class='alert-link'>Resend Activation Email?</a>",
+	"notactive" =>  "You have not yet activated this account. <a href=':url' class='alert-link'>Resend Activation Email?</a>",
 
-    "suspended" => "Your account has been temporarily suspended.",
+	"suspended" => "Your account has been temporarily suspended.",
 
-    "banned" 	=> "You have been banned.",
+	"banned" 	=> "You have been banned.",
 
 ];

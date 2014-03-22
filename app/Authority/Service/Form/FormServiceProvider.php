@@ -30,7 +30,8 @@ class FormServiceProvider extends ServiceProvider
         $app = $this->app;
 
         // Bind the Login Form
-        $app->bind('Authority\Service\Form\Login\LoginForm', function ($app) {
+        $app->bind('Authority\Service\Form\Login\LoginForm', function($app)
+        {
             return new LoginForm(
                 new LoginFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\Session\SessionInterface')
@@ -38,7 +39,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the Register Form
-        $app->bind('Authority\Service\Form\Register\RegisterForm', function ($app) {
+        $app->bind('Authority\Service\Form\Register\RegisterForm', function($app)
+        {
             return new RegisterForm(
                 new RegisterFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\User\UserInterface')
@@ -46,7 +48,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the Group Form
-        $app->bind('Authority\Service\Form\Group\GroupForm', function ($app) {
+        $app->bind('Authority\Service\Form\Group\GroupForm', function($app)
+        {
             return new GroupForm(
                 new GroupFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\Group\GroupInterface')
@@ -54,7 +57,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the User Form
-        $app->bind('Authority\Service\Form\User\UserForm', function ($app) {
+        $app->bind('Authority\Service\Form\User\UserForm', function($app)
+        {
             return new UserForm(
                 new UserFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\User\UserInterface')
@@ -62,7 +66,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the Resend Activation Form
-        $app->bind('Authority\Service\Form\ResendActivation\ResendActivationForm', function ($app) {
+        $app->bind('Authority\Service\Form\ResendActivation\ResendActivationForm', function($app)
+        {
             return new ResendActivationForm(
                 new ResendActivationFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\User\UserInterface')
@@ -70,7 +75,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the Forgot Password Form
-        $app->bind('Authority\Service\Form\ForgotPassword\ForgotPasswordForm', function ($app) {
+        $app->bind('Authority\Service\Form\ForgotPassword\ForgotPasswordForm', function($app)
+        {
             return new ForgotPasswordForm(
                 new ForgotPasswordFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\User\UserInterface')
@@ -78,7 +84,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the Change Password Form
-        $app->bind('Authority\Service\Form\ChangePassword\ChangePasswordForm', function ($app) {
+        $app->bind('Authority\Service\Form\ChangePassword\ChangePasswordForm', function($app)
+        {
             return new ChangePasswordForm(
                 new ChangePasswordFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\User\UserInterface')
@@ -86,7 +93,8 @@ class FormServiceProvider extends ServiceProvider
         });
 
         // Bind the Suspend User Form
-        $app->bind('Authority\Service\Form\SuspendUser\SuspendUserForm', function ($app) {
+        $app->bind('Authority\Service\Form\SuspendUser\SuspendUserForm', function($app)
+        {
             return new SuspendUserForm(
                 new SuspendUserFormLaravelValidator( $app['validator'] ),
                 $app->make('Authority\Repo\User\UserInterface')
