@@ -10,9 +10,9 @@ Create Group
 @section('content')
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-	{{ Form::open(array('action' => 'GroupController@store')) }}
+    {{ Form::open(array('action' => 'GroupController@store')) }}
         <h2>Create New Group</h2>
-    
+
         <div class="form-group {{ ($errors->has('name')) ? 'has-error' : '' }}">
             {{ Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'Name')) }}
             {{ ($errors->has('name') ? $errors->first('name') : '') }}

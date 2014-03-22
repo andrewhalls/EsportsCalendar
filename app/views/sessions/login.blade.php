@@ -22,7 +22,7 @@ Log In
                 {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password'))}}
                 {{ ($errors->has('password') ?  $errors->first('password') : '') }}
             </div>
-            
+
             <label class="checkbox">
                 {{ Form::checkbox('rememberMe', 'rememberMe') }} Remember me
             </label>

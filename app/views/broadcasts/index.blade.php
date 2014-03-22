@@ -19,7 +19,8 @@ Broadcasts
         // console.log(permission);
     });
 
-    function show($title, $body) {
+    public function show($title, $body)
+    {
         var instance = new Notification(
             $title, {
                 body: $body
@@ -42,12 +43,12 @@ Broadcasts
         return false;
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-        $(window).on('focus', function(event) {
+        $(window).on('focus', function (event) {
             $('.show-focus-status > .alert-danger').addClass('hidden');
             $('.show-focus-status > .alert-success').removeClass('hidden');
-        }).on('blur', function(event) {
+        }).on('blur', function (event) {
                 $('.show-focus-status > .alert-success').addClass('hidden');
                 $('.show-focus-status > .alert-danger').removeClass('hidden');
             });
@@ -61,7 +62,8 @@ Broadcasts
                     "year" : ($datepicker.find('.year').data('year') ? $datepicker.find('.weekday').data('format') : "YYYY")
                 };
 
-            function updateDisplay(cur_date) {
+            function updateDisplay(cur_date)
+            {
                 $datepicker.find('.date-container > .weekday').text(cur_date.format(format.weekday));
                 $datepicker.find('.date-container > .date').text(cur_date.format(format.date));
                 $datepicker.find('.date-container > .year').text(cur_date.format(format.year));
@@ -71,13 +73,13 @@ Broadcasts
 
             updateDisplay(cur_date);
 
-            $datepicker.on('click', '[data-toggle="calendar"]', function(event) {
+            $datepicker.on('click', '[data-toggle="calendar"]', function (event) {
                 event.preventDefault();
                 console.log('Yes Babeh');
                 $datepicker.find('.input-datepicker').toggleClass('show-input');
             });
 
-            $datepicker.on('click', '.input-datepicker > .input-group-btn > button', function(event) {
+            $datepicker.on('click', '.input-datepicker > .input-group-btn > button', function (event) {
                 event.preventDefault();
 
                 var $input = $(this).closest('.input-datepicker').find('input'),
@@ -89,7 +91,7 @@ Broadcasts
                 }
             });
 
-            $datepicker.on('click', '[data-toggle="datepicker"]', function(event) {
+            $datepicker.on('click', '[data-toggle="datepicker"]', function (event) {
                 event.preventDefault();
 
                 var cur_date = moment($(this).closest('.date-picker').data('date'), "YYYY/MM/DD"),
@@ -107,7 +109,7 @@ Broadcasts
             });
 
             if ($datepicker.data('keyboard') == true) {
-                $(window).on('keydown', function(event) {
+                $(window).on('keydown', function (event) {
                     if (event.which == 37) {
                         $datepicker.find('span:eq(0)').trigger('click');
                     }else if (event.which == 39) {
@@ -120,7 +122,7 @@ Broadcasts
     });
 
 
-    $(function(){
+    $(function () {
         var clock = $('#clock'),
             alarm = clock.find('.alarm'),
             ampm = clock.find('.ampm'),
@@ -135,7 +137,7 @@ Broadcasts
         var positions = ['h1','h2',':','m1','m2',':','s1','s2'];
         var digit_holder = clock.find('.digits');
 
-        $.each(positions, function() {
+        $.each(positions, function () {
             if(this == ':')
                 digit_holder.append('<div class="dots">');
             else {
@@ -149,13 +151,13 @@ Broadcasts
 
         var weekday_names = 'MON TUE WED THU FRI SAT SUN'.split(' '),
             weekday_holders = clock.find('.weekdays');
-        $.each(weekday_names, function(){
+        $.each(weekday_names, function () {
             weekday_holders.append('<span>' + this + '</span>');
         });
 
         var weekdays = clock.find('.weekdays span');
 
-        (function update_time(){
+        (function update_time() {
             var now = moment().format('hhmmssdA');
             digits.h1.attr('class', digit_to_name[now[0]]);
             digits.h2.attr('class', digit_to_name[now[1]]);
@@ -184,28 +186,28 @@ Broadcasts
             setTimeout(update_time, 1000);
         })();
 
-        $('#switch-theme').click(function(){
+        $('#switch-theme').click(function () {
             clock.toggleClass('light dark');
         });
 
-        $('.alarm-button').click(function(){
+        $('.alarm-button').click(function () {
             dialog.trigger('show');
         });
 
-        dialog.find('.close').click(function(){
+        dialog.find('.close').click(function () {
             dialog.trigger('hide');
         });
 
-        dialog.click(function(e){
+        dialog.click(function (e) {
             if($(e.trigger).is('.overlay')){
                 dialog.trigger('hide');
             }
         });
 
-        alarm_set.click(function(){
+        alarm_set.click(function () {
             var valid = true, after = 0,
                 to_seconds = [3600, 60, 1];
-            dialog.find('input').each(function(i){
+            dialog.find('input').each(function (i) {
                 if(this.validity && !this.validity.valid){
                     valid = false;
                     this.focus();
@@ -225,14 +227,14 @@ Broadcasts
             dialog.trigger('hide');
         });
 
-        alarm_clear.click(function(){
+        alarm_clear.click(function () {
             alarm_counter = -1;
             dialog.trigger('hide');
         });
 
-        dialog.on('hide', function(){
+        dialog.on('hide', function () {
             dialog.fadeOut();
-        }).on('show', function(){
+        }).on('show', function () {
                 var hours = 0, minutes = 0; seconds = 0, tmp = 0;
                 if(alarm_counter > 0){
                     tmp = alarm_counter;
@@ -249,7 +251,7 @@ Broadcasts
                 dialog.find('input').eq(0).val(hours).end().eq(1).val(minutes).end().eq(2).val(seconds);
                 dialog.fadeIn();
             });
-        time_is_up.click(function(){
+        time_is_up.click(function () {
             time_is_up.fadeOut();
         });
     });
@@ -940,8 +942,7 @@ input::-webkit-inner-spin-button{
 </div>
 
 <!--
-	The delete button uses Resftulizer.js to restfully submit with "Delete".  The "action_confirm" class triggers an optional confirm dialog.
-	Also, I have hardcoded adding the "disabled" class to the Admin group - deleting your own admin access causes problems.
+    The delete button uses Resftulizer.js to restfully submit with "Delete".  The "action_confirm" class triggers an optional confirm dialog.
+    Also, I have hardcoded adding the "disabled" class to the Admin group - deleting your own admin access causes problems.
 -->
 @stop
-
