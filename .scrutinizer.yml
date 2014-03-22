@@ -39,7 +39,3 @@ tools:
     php_loc: true
     php_pdepend: true
     php_hhvm: true
-filter:
-    excluded_paths:
-        - app/tests/
-        - app/database/
