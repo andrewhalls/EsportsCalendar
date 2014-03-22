@@ -42,4 +42,4 @@ tools:
 filter:
     excluded_paths:
         - app/tests
-		- app/database
+        - app/database
