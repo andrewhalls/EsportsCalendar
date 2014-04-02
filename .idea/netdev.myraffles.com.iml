@@ -71,7 +71,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/ircmaxell/password-compat" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/http-kernel" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpspec/phpspec" />
-          <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/symfony/css-selector" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/filp/whoops" />
           <root url="file://$MODULE_DIR$/vendor/patchwork/utf8" />
@@ -143,7 +142,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/debug" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/nesbot/carbon" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/mockery/mockery" />
-          <root url="file://$MODULE_DIR$/vendor/way/generators" />
           <root url="file://$MODULE_DIR$/vendor/d11wtq/boris" />
         </CLASSES>
         <SOURCES>
@@ -165,7 +163,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/ircmaxell/password-compat" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/http-kernel" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpspec/phpspec" />
-          <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/symfony/css-selector" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/filp/whoops" />
           <root url="file://$MODULE_DIR$/vendor/patchwork/utf8" />
@@ -237,7 +234,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/debug" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/nesbot/carbon" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/mockery/mockery" />
-          <root url="file://$MODULE_DIR$/vendor/way/generators" />
           <root url="file://$MODULE_DIR$/vendor/d11wtq/boris" />
         </SOURCES>
       </library>

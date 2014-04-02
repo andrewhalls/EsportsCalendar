@@ -1,4 +1,10 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sidneywidmer/latchet"
+        }
+    ],
 	"require": {
 		"laravel/framework": "4.1.*",
 		"cartalyst/sentry": "2.1.*",
@@ -10,7 +16,9 @@
         "behat/mink": "*",
         "behat/mink-extension":"*",
         "behat/mink-goutte-driver":"*",
-        "zizaco/factory-muff": "dev-master"
+        "zizaco/factory-muff": "dev-master",
+        "sidney/latchet": "dev-master",
+        "react/zmq": "0.2.*"
 	},
 	"require-dev": {
         "way/generators": "2.*",
@@ -34,7 +42,27 @@
         }
 	},
 	"scripts": {
-		"post-update-cmd": "php artisan optimize"
+		
+		"post-install-cmd": [
+			"php artisan optimize",
+			"chmod -R 777 app/storage"
+			"chmod -R 777 public",
+			"php artisan migrate"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"extra": {
+		"heroku": {
+			"framework": "silex",
+			"document-root": "public",
+			"index-document": "index.php"
+		}
 	},
 	"minimum-stability": "dev"
 }

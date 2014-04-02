@@ -19,15 +19,19 @@ Broadcasts
         // console.log(permission);
     });
 
-    function show($title, $body) {
+    function show($title, $body, $icon, $url) {
         var instance = new Notification(
             $title, {
-                body: $body
+                body: $body,
+                icon: $icon
             }
         );
 
         instance.onclick = function () {
-            // Something to do
+            window.open(
+                $url,
+                '_blank' // <- This is what makes it open in a new window.
+            );
         };
         instance.onerror = function () {
             // Something to do
@@ -258,7 +262,30 @@ Broadcasts
 
 
 </script>
-
+<script src="http://autobahn.s3.amazonaws.com/js/autobahn.min.js"></script>
+<script>
+    var watchList = [];
+    watchList[2] = true;
+    var conn = new ab.Session(
+        'ws://netdev.gamingcalendar.com:1111', // The host (our Latchet WebSocket server) to connect to
+        function() { // Once the connection has been established
+            conn.subscribe('test-topic', function(topic, event) {
+                if (event.matchid in watchList) {
+                    show(event.title,event.msg)
+                }
+                console.log(event);
+            });
+        },
+        function() {
+            // When the connection is closed
+            console.log('WebSocket connection closed');
+        },
+        {
+            // Additional parameters, we're ignoring the WAMP sub-protocol for older browsers
+            'skipSubprotocolCheck': true
+        }
+    );
+</script>
 <style>
 /*************
 ===The Clock===

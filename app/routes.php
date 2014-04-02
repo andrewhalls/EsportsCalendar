@@ -17,6 +17,14 @@
 App::bind('GamingCalendar\Repos\Game\GameRepository', 'GamingCalendar\Repos\Game\DbGameRepository');
 App::bind('GamingCalendar\Repos\Broadcast\BroadcastRepository', 'GamingCalendar\Repos\Broadcast\DbBroadcastRepository');
 
+Route::post('message', function(){
+        Latchet::publish('test-topic', array(
+                'title' => Input::get('title'),
+                'msg' => input::get('msg'),
+                'matchid' => input::get('matchid'),
+            )
+        );
+});
 
 Route::get(
     '/',
@@ -277,3 +285,6 @@ Route::delete(
 //     //return Response::view('errors.missing', array(), 404);
 // });
 
+
+Latchet::connection('Connection');
+Latchet::topic('test-topic', 'TestTopic');
