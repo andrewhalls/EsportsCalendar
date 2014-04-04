@@ -109,7 +109,6 @@ return array(
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Authority\Repo\RepoServiceProvider',
 		'Authority\Service\Form\FormServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
         'Sidney\Latchet\LatchetServiceProvider',
 	),
 
