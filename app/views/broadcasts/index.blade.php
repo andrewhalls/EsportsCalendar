@@ -267,7 +267,7 @@ Broadcasts
     var watchList = [];
     watchList[2] = true;
     var conn = new ab.Session(
-        'ws://netdev.gamingcalendar.com:1111', // The host (our Latchet WebSocket server) to connect to
+        'ws://{{ Config::get("sockets.host") }}:1111', // The host (our Latchet WebSocket server) to connect to
         function() { // Once the connection has been established
             conn.subscribe('test-topic', function(topic, event) {
                 if (event.matchid in watchList) {
