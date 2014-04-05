@@ -15,7 +15,7 @@ before_script:
   - echo "extension=zmq.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
   - "mysql -e 'create database `test_calendar`;'"
   - composer install -n --prefer-source
-  - php artisan migrate --seed
+  - php artisan migrate --seed --env="testing"
   - php codecept build
 
 script: php codecept run
