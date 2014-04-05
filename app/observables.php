@@ -1,8 +1,5 @@
 <?php
 
-App::bind('PageRepository', 'EloquentPage');
-App::bind('BlockRepository', 'EloquentBlock');
-
 // User Login event
 Event::listen('user.login', function ($userId, $email) {
     Session::put('userId', $userId);

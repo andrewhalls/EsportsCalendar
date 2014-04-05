@@ -16,15 +16,22 @@
  */
 App::bind('GamingCalendar\Repos\Game\GameRepository', 'GamingCalendar\Repos\Game\DbGameRepository');
 App::bind('GamingCalendar\Repos\Broadcast\BroadcastRepository', 'GamingCalendar\Repos\Broadcast\DbBroadcastRepository');
+App::bind('GamingCalendar\Repos\Team\TeamRepository', 'GamingCalendar\Repos\Team\DbTeamRepository');
+App::bind('GamingCalendar\Repos\Genre\GenreRepository', 'GamingCalendar\Repos\Genre\DbGenreRepository');
 
-Route::post('message', function(){
-        Latchet::publish('test-topic', array(
+Route::get(
+    'message',
+    function () {
+        Latchet::publish(
+            'test-topic',
+            array(
                 'title' => Input::get('title'),
-                'msg' => input::get('msg'),
-                'matchid' => input::get('matchid'),
+                'msg' => Input::get('msg'),
+                'matchid' => Input::get('matchid'),
             )
         );
-});
+    }
+);
 
 Route::get(
     '/',
@@ -34,6 +41,38 @@ Route::get(
     )
 );
 
+
+Route::get(
+    '/admin/broadcasts',
+    array(
+        'as' => 'admin.broadcasts.index',
+        'uses' => 'GamingCalendar\Controllers\Admin\BroadcastController@index'
+    )
+);
+
+Route::get(
+    '/admin/games',
+    array(
+        'as' => 'admin.games.index',
+        'uses' => 'GamingCalendar\Controllers\Admin\GameController@index'
+    )
+);
+
+Route::get(
+    '/admin/teams',
+    array(
+        'as' => 'admin.teams.index',
+        'uses' => 'GamingCalendar\Controllers\Admin\TeamController@index'
+    )
+);
+
+Route::get(
+    '/admin/genres',
+    array(
+        'as' => 'admin.genre.index',
+        'uses' => 'GamingCalendar\Controllers\Admin\GenreController@index'
+    )
+);
 // Session Routes
 Route::get('login', array('as' => 'login', 'uses' => 'SessionController@create'));
 Route::get('logout', array('as' => 'logout', 'uses' => 'SessionController@destroy'));
@@ -100,12 +139,9 @@ Route::post(
 Route::get(
     'broadcast',
     function () {
-        $data = GamingCalendar\models\Broadcast::all();
-        return Response::make(
-            $data,
-            200,
-            array('Content-Type' => 'application/json')
-        );
+        $broadcasts = GamingCalendar\models\Broadcast::all();
+        return View::make('broadcasts.index')
+            ->with(compact($broadcasts));
     }
 );
 

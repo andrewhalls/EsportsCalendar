@@ -8,17 +8,10 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"cartalyst/sentry": "2.1.*",
-		"mockery/mockery": "dev-master@dev",
-		"phpunit/phpunit": "3.7.*",
-		"phpspec/phpspec": "2.0.*@dev",
-        "benconstable/phpspec-laravel": "*",
-        "behat/behat": "2.5.*",
-        "behat/mink": "*",
-        "behat/mink-extension":"*",
-        "behat/mink-goutte-driver":"*",
         "zizaco/factory-muff": "dev-master",
         "sidney/latchet": "dev-master",
-        "react/zmq": "0.2.*"
+        "react/zmq": "0.2.*",
+        "codeception/codeception": "@stable"
 	},
 	"require-dev": {
         "way/generators": "2.*",
