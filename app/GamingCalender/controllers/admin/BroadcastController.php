@@ -1,4 +1,4 @@
-<?php namespace GamingCalendar\Controllers;
+<?php namespace GamingCalendar\Controllers\Admin;
 
 use GamingCalendar\Repos\Broadcast\BroadcastRepository;
 use View;
@@ -27,9 +27,9 @@ class BroadcastController extends \BaseController
      */
     public function index()
     {
-        $broadcast = $this->repository->all();
+        $broadcasts = $this->repository->all();
 
-        return View::make('broadcast.index', compact('broadcast'));
+        return View::make('admin.broadcasts.index', compact('broadcasts'));
     }
 
     /**

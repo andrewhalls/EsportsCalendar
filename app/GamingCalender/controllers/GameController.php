@@ -27,9 +27,9 @@ class GameController extends \BaseController
      */
     public function index()
     {
-        $game = $this->repository->all();
+        $games = $this->repository->all();
 
-        return View::make('game.index', compact('game'));
+        return View::make('game.index', compact('games'));
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php namespace GamingCalendar\Controllers;
+<?php namespace GamingCalendar\Controllers\Admin;
 
 use GamingCalendar\Repos\Channel\ChannelRepository;
 use View;
@@ -27,9 +27,9 @@ class ChannelController extends \BaseController
      */
     public function index()
     {
-        $broadcast = $this->repository->all();
+        $channel = $this->repository->all();
 
-        return View::make('broadcast.index', compact('broadcast'));
+        return View::make('admin.channels.index', compact('channel'));
     }
 
     /**
@@ -39,7 +39,7 @@ class ChannelController extends \BaseController
      */
     public function create()
     {
-        return View::make('broadcasts.create');
+        return View::make('admin.channels.create');
     }
 
     /**
@@ -57,7 +57,7 @@ class ChannelController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('broadcasts.index');
+        return Redirect::route('admin.channels.index');
     }
 
     /**
@@ -68,9 +68,9 @@ class ChannelController extends \BaseController
      */
     public function show($id)
     {
-        $broadcasts = $this->repository->findOrFail($id);
+        $channel = $this->repository->findOrFail($id);
 
-        return View::make('broadcasts.show', compact('broadcasts'));
+        return View::make('admin.channels.show', compact('channel'));
     }
 
     /**
@@ -81,9 +81,9 @@ class ChannelController extends \BaseController
      */
     public function edit($id)
     {
-        $channels = $this->repository->find($id);
+        $channel = $this->repository->find($id);
 
-        return View::make('channels.edit', compact('channels'));
+        return View::make('admin.channels.edit', compact('channel'));
     }
 
     /**
@@ -94,7 +94,7 @@ class ChannelController extends \BaseController
      */
     public function update($id)
     {
-        $raffle = $this->repository->findOrFail($id);
+        $channel = $this->repository->findOrFail($id);
 
         $validator = Validator::make($data = Input::all(), $this->repository->getRules());
 
@@ -102,9 +102,9 @@ class ChannelController extends \BaseController
             return Redirect::back()->withErrors($validator)->withInput();
         }
 
-        $raffle->update($data);
+        $channel->update($data);
 
-        return Redirect::route('channels.index');
+        return Redirect::route('admin.channels.index');
     }
 
     /**
@@ -117,6 +117,6 @@ class ChannelController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('channels.index');
+        return Redirect::route('admin.channels.index');
     }
 }
