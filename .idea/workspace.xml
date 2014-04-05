@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb7eb9b-1037-4ca1-9d48-a0809aa3bd17" name="Default" comment="Update for clock shizzle&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/c3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.scrutinizer.yml" afterPath="$PROJECT_DIR$/.scrutinizer.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tests/functional/CreateBroadcastCept.php" afterPath="$PROJECT_DIR$/app/tests/functional/CreateBroadcastCept.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tests/functional/SeeAllBroadcastsCept.php" afterPath="$PROJECT_DIR$/app/tests/functional/SeeAllBroadcastsCept.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tests/_log/acceptance-2014-04-05" afterPath="$PROJECT_DIR$/app/tests/_log/acceptance-2014-04-05" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeception.yml" afterPath="$PROJECT_DIR$/codeception.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tests/_log/report.xml" afterPath="$PROJECT_DIR$/app/tests/_log/report.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="netdev.myraffles.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,19 +48,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/testing/database.php">
+      <file leaf-file-name="codeception.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeception.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-14.153846" vertical-offset="0" max-vertical-offset="506">
+            <state line="13" column="16" selection-start="296" selection-end="296" vertical-scroll-proportion="-11.8" vertical-offset="4" max-vertical-offset="621">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <file leaf-file-name="start.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="654" selection-end="654" vertical-scroll-proportion="0.6515151" vertical-offset="27" max-vertical-offset="621">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1587">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paths.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/paths.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.764706" vertical-offset="906" max-vertical-offset="1449">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_bootstrap.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tests/_bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.9019608" vertical-offset="0" max-vertical-offset="184">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="artisan.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="414">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/start/global.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="0" selection-start="2211" selection-end="2211" vertical-scroll-proportion="-12.115385" vertical-offset="1088" max-vertical-offset="1679">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="22" selection-start="644" selection-end="644" vertical-scroll-proportion="-7.6666665" vertical-offset="0" max-vertical-offset="1196">
+              <folding>
+                <element signature="e#34#163#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c3.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/c3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="242" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="0.7165493" vertical-offset="2261" max-vertical-offset="2829">
+              <folding>
+                <element signature="e#187#463#0" expanded="false" />
+                <element signature="e#465#548#0" expanded="false" />
+                <element signature="e#550#3991#0" expanded="false" />
+                <element signature="e#984#1889#0" expanded="false" />
+                <element signature="e#1895#2138#0" expanded="false" />
+                <element signature="e#2144#2293#0" expanded="false" />
+                <element signature="e#2376#3315#0" expanded="false" />
+                <element signature="e#3321#3475#0" expanded="false" />
+                <element signature="e#3481#3867#0" expanded="false" />
+                <element signature="e#3873#3989#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/start/local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="184">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.03846" vertical-offset="1249" max-vertical-offset="1817">
               <folding />
             </state>
           </provider>
@@ -71,9 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_03_19_180707_create_team_table.php" />
-        <option value="$PROJECT_DIR$/app/tests/acceptance/bootstrap/FeatureContext.php" />
-        <option value="$PROJECT_DIR$/app/GamingCalender/models/Channel.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Genre.php" />
         <option value="$PROJECT_DIR$/app/GamingCalender/models/Team.php" />
         <option value="$PROJECT_DIR$/app/tests/acceptance/broadcast.feature" />
@@ -86,7 +176,6 @@
         <option value="$PROJECT_DIR$/app/tests/nginx.conf" />
         <option value="$PROJECT_DIR$/behat.yml" />
         <option value="$PROJECT_DIR$/app/socket/Connection.php" />
-        <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/config/packages/sidney/Latchet/config.php" />
         <option value="$PROJECT_DIR$/app/socket/TestTopic.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
@@ -113,15 +202,19 @@
         <option value="$PROJECT_DIR$/app/tests/acceptance/HomeCept.php" />
         <option value="$PROJECT_DIR$/app/tests/acceptance.suite.yml" />
         <option value="$PROJECT_DIR$/app/tests/functional/_pages/AdminBroadcastPage.php" />
-        <option value="$PROJECT_DIR$/app/tests/functional/CreateBroadcastCept.php" />
         <option value="$PROJECT_DIR$/app/tests/functional.suite.yml" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/tests/functional/_bootstrap.php" />
-        <option value="$PROJECT_DIR$/codeception.yml" />
         <option value="$PROJECT_DIR$/app/config/testing/database.php" />
-        <option value="$PROJECT_DIR$/app/tests/functional/SeeAllBroadcastsCept.php" />
         <option value="$PROJECT_DIR$/travis.ini" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/.scrutinizer.yml" />
+        <option value="$PROJECT_DIR$/app/tests/functional/CreateBroadcastCept.php" />
+        <option value="$PROJECT_DIR$/app/tests/functional/SeeAllBroadcastsCept.php" />
+        <option value="$PROJECT_DIR$/codeception.yml" />
+        <option value="$PROJECT_DIR$/app/c3.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
       </list>
     </option>
   </component>
@@ -348,7 +441,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netdev.gamingcalendar.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netdev.gamingcalendar.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,46 +470,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netdev.gamingcalendar.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,6 +490,22 @@
     <property name="LayoutCode.rearrangeEntriesPHP" value="true" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="276" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="300" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="979" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="297" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="286" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="972" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -433,11 +516,11 @@
       <recent name="C:\webroot\netdev.gamingcalendar.com\app\GamingCalender\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\webroot\netdev.gamingcalendar.com\public" />
       <recent name="C:\webroot\netdev.gamingcalendar.com" />
       <recent name="C:\webroot\netdev.gamingcalendar.com\app\views" />
       <recent name="C:\webroot\netdev.gamingcalendar.com\app" />
       <recent name="C:\webroot\netdev.gamingcalendar.com\spec" />
-      <recent name="C:\webroot\netdev.myraffles.com\app\spec" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.BroadcastModelTest">
@@ -632,10 +715,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22570194" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.02768903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -692,104 +775,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="8.846154" vertical-offset="483" max-vertical-offset="1150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/admin/BroadcastController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="71" selection-start="697" selection-end="697" vertical-scroll-proportion="-14.153846" vertical-offset="276" max-vertical-offset="2875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="116" selection-end="116" vertical-scroll-proportion="-5.3076925" vertical-offset="0" max-vertical-offset="552" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Match.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="69" selection-start="558" selection-end="558" vertical-scroll-proportion="-19.192308" vertical-offset="76" max-vertical-offset="782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="332" selection-end="332" vertical-scroll-proportion="0.6883803" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/broadcasts/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="28" selection-start="736" selection-end="736" vertical-scroll-proportion="-5.8627453" vertical-offset="621" max-vertical-offset="1656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/teams/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/models/Broadcast.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="30" selection-start="777" selection-end="777" vertical-scroll-proportion="-31.846153" vertical-offset="0" max-vertical-offset="2001" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/genre/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.30842912" vertical-offset="0" max-vertical-offset="1127" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/channels/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1127" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/game/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="439" selection-end="439" vertical-scroll-proportion="0.6777164" vertical-offset="0" max-vertical-offset="1127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/admin/GenreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="49" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/admin/ChannelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="38" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="2737" max-vertical-offset="2944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/admin/TeamController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="2944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/teams/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/teams/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/GamingCalender/controllers/GenreController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2875">
@@ -955,20 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests/acceptance/HomeCept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="230" selection-end="230" vertical-scroll-proportion="-2.7058823" vertical-offset="0" max-vertical-offset="276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests/acceptance.suite.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="498" selection-end="498" vertical-scroll-proportion="-15.64" vertical-offset="0" max-vertical-offset="552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xml/TESTC">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
@@ -1014,35 +985,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests/functional/CreateBroadcastCept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="189" selection-end="189" vertical-scroll-proportion="-4.423077" vertical-offset="0" max-vertical-offset="253">
-          <folding>
-            <marker date="1396722312587" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tests/functional/_pages/AdminBroadcastPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="8" selection-start="553" selection-end="585" vertical-scroll-proportion="-14.153846" vertical-offset="414" max-vertical-offset="1127">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests/functional/SeeAllBroadcastsCept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="132" selection-end="132" vertical-scroll-proportion="-3.5384614" vertical-offset="0" max-vertical-offset="253">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeception.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="-17.24" vertical-offset="29" max-vertical-offset="598">
-          <folding>
-            <marker date="1396724048686" expanded="true" signature="-1:-1" placeholder="modules:" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,8 +1008,168 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="654" selection-end="654" vertical-scroll-proportion="0.6515151" vertical-offset="27" max-vertical-offset="621">
+        <state line="18" column="25" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="621">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.scrutinizer.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="31" selection-start="3301" selection-end="3301" vertical-scroll-proportion="-29.88" vertical-offset="288" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/functional/CreateBroadcastCept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="6" selection-end="32" vertical-scroll-proportion="-0.88461536" vertical-offset="0" max-vertical-offset="299">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/functional/SeeAllBroadcastsCept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.7692307" vertical-offset="0" max-vertical-offset="299">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/acceptance.suite.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="427" selection-end="427" vertical-scroll-proportion="-13.8" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/_log/CreateBroadcastCept.php.page.debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/_log/functional-2014-04-05">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="1012" selection-end="1012" vertical-scroll-proportion="4.6" vertical-offset="345" max-vertical-offset="1403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/_log/SeeAllBroadcastsCept.php.page.debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/_log/report.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/_log/acceptance-2014-04-05">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="53" selection-start="1889" selection-end="1889" vertical-scroll-proportion="52.28" vertical-offset="1652" max-vertical-offset="2208">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/acceptance/_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/acceptance/HomeCept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="230" selection-end="230" vertical-scroll-proportion="-2.7058823" vertical-offset="0" max-vertical-offset="276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeception.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="296" selection-end="296" vertical-scroll-proportion="-11.8" vertical-offset="4" max-vertical-offset="621">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/artisan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.03846" vertical-offset="1249" max-vertical-offset="1817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/paths.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.764706" vertical-offset="906" max-vertical-offset="1449">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/_bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.9019608" vertical-offset="0" max-vertical-offset="184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="2211" selection-end="2211" vertical-scroll-proportion="-12.115385" vertical-offset="1088" max-vertical-offset="1679">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="644" selection-end="644" vertical-scroll-proportion="-7.6666665" vertical-offset="0" max-vertical-offset="1196">
+          <folding>
+            <element signature="e#34#163#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/c3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="0" selection-start="7242" selection-end="7242" vertical-scroll-proportion="0.7165493" vertical-offset="2261" max-vertical-offset="2829">
+          <folding>
+            <element signature="e#187#463#0" expanded="false" />
+            <element signature="e#465#548#0" expanded="false" />
+            <element signature="e#550#3991#0" expanded="false" />
+            <element signature="e#984#1889#0" expanded="false" />
+            <element signature="e#1895#2138#0" expanded="false" />
+            <element signature="e#2144#2293#0" expanded="false" />
+            <element signature="e#2376#3315#0" expanded="false" />
+            <element signature="e#3321#3475#0" expanded="false" />
+            <element signature="e#3481#3867#0" expanded="false" />
+            <element signature="e#3873#3989#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
