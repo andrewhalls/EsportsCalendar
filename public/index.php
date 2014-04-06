@@ -1,4 +1,6 @@
 <?php
+
+require __DIR__.'/c3.php';
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

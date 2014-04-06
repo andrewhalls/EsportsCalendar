@@ -62,7 +62,6 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-timer" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/swiftmailer/swiftmailer" />
@@ -88,13 +87,11 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/way/generators" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/console" />
-          <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpunit/phpunit-mock-objects" />
           <root url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/jeremeamia/SuperClosure" />
-          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpseclib/phpseclib" />
           <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
           <root url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
@@ -111,7 +108,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/finder" />
           <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
-          <root url="file://$MODULE_DIR$/vendor/phpspec/phpspec" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpunit/php-text-template" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/routing" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
@@ -130,7 +126,6 @@
           <root url="file://$MODULE_DIR$/vendor/cartalyst/sentry" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/nikic/php-parser" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/dom-crawler" />
-          <root url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
           <root url="file://$MODULE_DIR$/vendor/classpreloader/classpreloader" />
           <root url="file://$MODULE_DIR$/vendor/symfony/http-foundation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
@@ -156,7 +151,6 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-timer" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/swiftmailer/swiftmailer" />
@@ -182,13 +176,11 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/way/generators" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/console" />
-          <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpunit/phpunit-mock-objects" />
           <root url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/jeremeamia/SuperClosure" />
-          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpseclib/phpseclib" />
           <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
           <root url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
@@ -205,7 +197,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/finder" />
           <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
-          <root url="file://$MODULE_DIR$/vendor/phpspec/phpspec" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/phpunit/php-text-template" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/routing" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
@@ -224,7 +215,6 @@
           <root url="file://$MODULE_DIR$/vendor/cartalyst/sentry" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/nikic/php-parser" />
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/symfony/dom-crawler" />
-          <root url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
           <root url="file://$MODULE_DIR$/vendor/classpreloader/classpreloader" />
           <root url="file://$MODULE_DIR$/vendor/symfony/http-foundation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
@@ -239,16 +229,6 @@
           <root url="file://$MODULE_DIR$/../netdev.myraffles.com/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/vendor/way/generators" />
           <root url="file://$MODULE_DIR$/vendor/d11wtq/boris" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="PHARS">
-        <CLASSES>
-          <root url="phar://$MODULE_DIR$/vendor/symfony/dependency-injection/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
-        </CLASSES>
-        <SOURCES>
-          <root url="phar://$MODULE_DIR$/vendor/symfony/dependency-injection/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
         </SOURCES>
       </library>
     </orderEntry>

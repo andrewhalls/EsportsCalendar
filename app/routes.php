@@ -14,6 +14,7 @@
 /**
  * TODO Move to Service Provider
  */
+App::bind('GamingCalendar\Repos\Channel\ChannelRepository', 'GamingCalendar\Repos\Channel\DbChannelRepository');
 App::bind('GamingCalendar\Repos\Game\GameRepository', 'GamingCalendar\Repos\Game\DbGameRepository');
 App::bind('GamingCalendar\Repos\Broadcast\BroadcastRepository', 'GamingCalendar\Repos\Broadcast\DbBroadcastRepository');
 App::bind('GamingCalendar\Repos\Team\TeamRepository', 'GamingCalendar\Repos\Team\DbTeamRepository');
@@ -44,22 +45,22 @@ Route::get(
 
 Route::resource(
     '/admin/broadcasts',
-    'GamingCalendar\Controllers\Admin\BroadcastController@index'
+    'GamingCalendar\Controllers\Admin\BroadcastController'
 );
 
 Route::resource(
     '/admin/games',
-    'GamingCalendar\Controllers\Admin\GameController@index'
+    'GamingCalendar\Controllers\Admin\GameController'
 );
 
 Route::resource(
     '/admin/teams',
-    'GamingCalendar\Controllers\Admin\TeamController@index'
+    'GamingCalendar\Controllers\Admin\TeamController'
 );
 
 Route::resource(
     '/admin/genres',
-    'GamingCalendar\Controllers\Admin\GenreController@index'
+    'GamingCalendar\Controllers\Admin\GenreController'
 );
 // Session Routes
 Route::get('login', array('as' => 'login', 'uses' => 'SessionController@create'));

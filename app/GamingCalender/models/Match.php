@@ -18,11 +18,11 @@ class Match extends \Eloquent
 
     public function homeTeam()
     {
-        return $this->belongsTo('GamingCalendar\models\Game', 'team_a');
+        return $this->belongsTo('GamingCalendar\models\Team', 'team_a');
     }
 
     public function awayTeam()
     {
-        return $this->belongsTo('GamingCalendar\models\Game', 'team_b');
+        return $this->belongsTo('GamingCalendar\models\Team', 'team_b');
     }
 }

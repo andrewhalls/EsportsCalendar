@@ -22,6 +22,11 @@ class DbBroadcastRepository extends DbRepository implements BroadcastRepository
         $this->model = $model;
     }
 
+    public function find($id)
+    {
+        return $this->model->find($id);
+    }
+
     /**
      * @param $days
      * @return mixed|void
@@ -38,6 +43,7 @@ class DbBroadcastRepository extends DbRepository implements BroadcastRepository
     {
         return $this->model
             ->broadcasting
+            ->with('game')
             ->get();
     }
 

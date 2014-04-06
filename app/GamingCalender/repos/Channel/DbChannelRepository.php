@@ -22,4 +22,11 @@ class DbChannelRepository extends DbRepository implements ChannelRepository
     {
         $this->model = $model;
     }
+
+    public function lists($column, $key = null)
+    {
+        return $this->model
+            ->orderBy('name', 'ASC')
+            ->lists($column, $key);
+    }
 }

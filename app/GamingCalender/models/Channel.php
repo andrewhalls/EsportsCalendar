@@ -16,4 +16,14 @@ class Channel extends \Eloquent
 
     // Don't forget to fill this array
     protected $guarded = [];
+
+    public function getLanguagesAttribute()
+    {
+        return [
+                'English',
+                'French',
+                'German',
+                'Russian'
+        ];
+    }
 }

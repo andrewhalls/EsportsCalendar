@@ -1,38 +1,65 @@
-@extends('layouts.default')
+@extends('admin.layouts.default')
 
 {{-- Web site Title --}}
 @section('title')
 @parent
-Create Group
+Broadcasts
+@stop
+
+@section('page-title')
+@parent
+Broadcasts
 @stop
 
 {{-- Content --}}
 @section('content')
+
+{{ Form::model($broadcast, ['route' => 'admin.broadcasts.store']) }}
+
 <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-	{{ Form::open(array('action' => 'GroupController@store')) }}
-        <h2>Create New Group</h2>
-    
-        <div class="form-group {{ ($errors->has('name')) ? 'has-error' : '' }}">
-            {{ Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'Name')) }}
-            {{ ($errors->has('name') ? $errors->first('name') : '') }}
-        </div>
+    <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">Quick Example</h3>
+            </div><!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+                <div class="box-body">
+                    <div class="form-group">
+                        {{ Form::label('title') }}
+                        {{ Form::text('title', $broadcast->title, ['class' => 'form-control', 'placeholder' => 'Broadcast Title']) }}
+                    </div>
+                    <div class="form-group">
+                        {{ Form::label('game') }}
+                        {{ Form::select('game_id', $games, $broadcast->game_id, ['class' => 'form-control']) }}
+                    </div>
+                    <div class="form-group">
+                        {{ Form::label('start_at', 'Start Time') }}
+                        {{ Form::text('start_at', $broadcast->start_at, ['class' => 'form-control']) }}
+                    </div>
+                    <div class="form-group">
+                        {{ Form::label('end_at', 'End Time') }}
+                        {{ Form::text('end_at', $broadcast->end_at, ['class' => 'form-control']) }}
+                    </div>
+                    <div class="form-group">
+                        {{ Form::label('description') }}
+                        {{ Form::textArea('description', $broadcast->description, ['class' => 'form-control', 'rows' => '3']) }}
+                    </div>
+                </div><!-- /.box-body -->
 
-        {{ Form::label('Permissions') }}
-        <div class="form-group">
-            <label class="checkbox-inline">
-                {{ Form::checkbox('adminPermissions', 1) }} Admin
-            </label>
-            <label class="checkbox-inline">
-                {{ Form::checkbox('userPermissions', 1) }} User
-            </label>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div><!-- /.box -->
 
-        </div>
-
-        {{ Form::submit('Create New Group', array('class' => 'btn btn-primary')) }}
-
-    {{ Form::close() }}
     </div>
+
 </div>
 
+{{ Form::close() }}
+
+</section><!-- /.content -->
 @stop
+

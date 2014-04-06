@@ -1,0 +1,1 @@
+Codeception is not loaded. Please check that either PHAR or Composer or PEAR package can be used

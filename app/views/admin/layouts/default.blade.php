@@ -8,15 +8,15 @@
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- bootstrap 3.0.2 -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
-    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
-    <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- DATA TABLES -->
-    <link href="../../css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="/css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +57,7 @@
                 <li><!-- start message -->
                     <a href="#">
                         <div class="pull-left">
-                            <img src="../../img/avatar3.png" class="img-circle" alt="User Image"/>
+                            <img src="/img/avatar3.png" class="img-circle" alt="User Image"/>
                         </div>
                         <h4>
                             Support Team
@@ -69,7 +69,7 @@
                 <li>
                     <a href="#">
                         <div class="pull-left">
-                            <img src="../../img/avatar2.png" class="img-circle" alt="user image"/>
+                            <img src="/img/avatar2.png" class="img-circle" alt="user image"/>
                         </div>
                         <h4>
                             AdminLTE Design Team
@@ -81,7 +81,7 @@
                 <li>
                     <a href="#">
                         <div class="pull-left">
-                            <img src="../../img/avatar.png" class="img-circle" alt="user image"/>
+                            <img src="/img/avatar.png" class="img-circle" alt="user image"/>
                         </div>
                         <h4>
                             Developers
@@ -93,7 +93,7 @@
                 <li>
                     <a href="#">
                         <div class="pull-left">
-                            <img src="../../img/avatar2.png" class="img-circle" alt="user image"/>
+                            <img src="/img/avatar2.png" class="img-circle" alt="user image"/>
                         </div>
                         <h4>
                             Sales Department
@@ -105,7 +105,7 @@
                 <li>
                     <a href="#">
                         <div class="pull-left">
-                            <img src="../../img/avatar.png" class="img-circle" alt="user image"/>
+                            <img src="/img/avatar.png" class="img-circle" alt="user image"/>
                         </div>
                         <h4>
                             Reviewers
@@ -240,7 +240,7 @@
     <ul class="dropdown-menu">
         <!-- User image -->
         <li class="user-header bg-light-blue">
-            <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+            <img src="/img/avatar3.png" class="img-circle" alt="User Image" />
             <p>
                 Jane Doe - Web Developer
                 <small>Member since Nov. 2012</small>
@@ -281,7 +281,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                <img src="/img/avatar3.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
                 <p>Hello, {{ Session::get('name') }}</p>
@@ -302,7 +302,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li>
-                <a href="../../index.html">
+                <a href="/index.html">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
@@ -410,12 +410,12 @@
 <!-- jQuery 2.0.2 -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- DATA TABES SCRIPT -->
-<script src="../../js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
-<script src="../../js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="/js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+<script src="/js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
 <!-- AdminLTE App -->
-<script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
+<script src="/js/AdminLTE/app.js" type="text/javascript"></script>
 
 <!-- page script -->
 <script type="text/javascript">

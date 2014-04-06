@@ -9,8 +9,10 @@ use Carbon\Carbon;
 class Broadcast extends \Eloquent
 {
     // Add your validation rules here
-    public static $rules = [
-        // 'title' => 'required'
+    public $rules = [
+        'title' => 'required',
+        'start_at' => 'required',
+        'end_at' => 'required'
     ];
 
     // Don't forget to fill this array
@@ -19,14 +21,14 @@ class Broadcast extends \Eloquent
     public $timestamps = true;
     protected $softDelete = true;
 
-    public function match()
+    public function matches()
     {
         return $this->hasMany('GamingCalendar\models\Match');
     }
 
     public function channel()
     {
-        return $this->hasOne('GamingCalendar\models\Channel');
+        return $this->belongsTo('GamingCalendar\models\Channel');
     }
 
     public function game()

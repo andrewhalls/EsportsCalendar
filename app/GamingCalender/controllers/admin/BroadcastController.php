@@ -1,7 +1,11 @@
 <?php namespace GamingCalendar\Controllers\Admin;
 
 use GamingCalendar\Repos\Broadcast\BroadcastRepository;
+use GamingCalendar\Repos\Game\GameRepository;
+use GamingCalendar\Repos\Channel\ChannelRepository;
+use GamingCalendar\Repos\Team\TeamRepository;
 use View;
+use Input;
 use Redirect;
 use Validator;
 
@@ -14,10 +18,15 @@ class BroadcastController extends \BaseController
 
     /**
      * @param BroadcastRepository $repository
+     * @param GameRepository $gameRepository
+     * @param ChannelRepository $channelRepository
      */
-    public function __construct(BroadcastRepository $repository)
+    public function __construct(BroadcastRepository $repository, GameRepository $gameRepository, TeamRepository $teamRepository, ChannelRepository $channelRepository)
     {
         $this->repository = $repository;
+        $this->gameRepository = $gameRepository;
+        $this->channelRepository = $channelRepository;
+        $this->teamRepository = $teamRepository;
     }
 
     /**
@@ -39,7 +48,12 @@ class BroadcastController extends \BaseController
      */
     public function create()
     {
-        return View::make('broadcasts.create');
+        $broadcast = $this->repository->instance();
+
+        $games = $this->gameRepository->lists('name', 'id');
+
+        return View::make('admin.broadcasts.create')
+            ->with(compact('broadcast', 'games'));
     }
 
     /**
@@ -57,7 +71,7 @@ class BroadcastController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('broadcasts.index');
+        return Redirect::route('admin.broadcasts.index');
     }
 
     /**
@@ -68,9 +82,9 @@ class BroadcastController extends \BaseController
      */
     public function show($id)
     {
-        $broadcasts = $this->repository->findOrFail($id);
+        $broadcast = $this->repository->findOrFail($id);
 
-        return View::make('broadcasts.show', compact('broadcasts'));
+        return View::make('admin.broadcasts.show', compact('broadcast'));
     }
 
     /**
@@ -81,9 +95,13 @@ class BroadcastController extends \BaseController
      */
     public function edit($id)
     {
-        $broadcasts = $this->repository->find($id);
+        $broadcast = $this->repository->find($id);
 
-        return View::make('broadcasts.edit', compact('broadcasts'));
+        $teams = $this->teamRepository->lists('name', 'id');
+        $games = $this->gameRepository->lists('name', 'id');
+        $channels = $this->channelRepository->lists(\DB::Raw('CONCAT(name, " - ", url)'), 'id');
+
+        return View::make('admin.broadcasts.edit', compact('broadcast', 'games', 'channels', 'teams'));
     }
 
     /**
@@ -94,7 +112,7 @@ class BroadcastController extends \BaseController
      */
     public function update($id)
     {
-        $raffle = $this->repository->findOrFail($id);
+        $broadcast = $this->repository->findOrFail($id);
 
         $validator = Validator::make($data = Input::all(), $this->repository->getRules());
 
@@ -102,9 +120,9 @@ class BroadcastController extends \BaseController
             return Redirect::back()->withErrors($validator)->withInput();
         }
 
-        $raffle->update($data);
+        $broadcast->update($data);
 
-        return Redirect::route('broadcasts.index');
+        return Redirect::route('admin.broadcasts.index');
     }
 
     /**
@@ -117,6 +135,6 @@ class BroadcastController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('broadcasts.index');
+        return Redirect::route('admin.broadcasts.index');
     }
 }

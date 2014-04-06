@@ -21,4 +21,11 @@ class DbGameRepository extends DbRepository implements GameRepository
     {
         $this->model = $model;
     }
+
+    public function lists($column, $key = null)
+    {
+        return $this->model
+            ->orderBy('name', 'ASC')
+            ->lists($column, $key);
+    }
 }

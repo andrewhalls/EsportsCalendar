@@ -21,4 +21,11 @@ class DbTeamRepository extends DbRepository implements TeamRepository
     {
         $this->model = $model;
     }
+
+    public function lists($column, $key = null)
+    {
+        return $this->model
+            ->orderBy('name', 'ASC')
+            ->lists($column, $key);
+    }
 }

@@ -17,4 +17,9 @@ interface GameRepository
      * Get all records.
      */
     public function all();
+
+    /**
+     * @return mixed
+     */
+    public function lists($column, $key = null);
 }

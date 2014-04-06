@@ -16,7 +16,8 @@
 	"require-dev": {
         "way/generators": "2.*",
         "fzaninotto/faker": "v1.3.0",
-        "guzzle/guzzle": "2.4.*"
+        "guzzle/guzzle": "2.4.*",
+        "itsgoingd/clockwork": "1.*"
 	},
 	"autoload": {
 		"classmap": [
