@@ -11,6 +11,7 @@ settings:
     log: true
 coverage:
     enabled: true
+    remote: true
 modules:
     config:
         Db:

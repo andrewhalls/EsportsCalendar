@@ -42,36 +42,24 @@ Route::get(
 );
 
 
-Route::get(
+Route::resource(
     '/admin/broadcasts',
-    array(
-        'as' => 'admin.broadcasts.index',
-        'uses' => 'GamingCalendar\Controllers\Admin\BroadcastController@index'
-    )
+    'GamingCalendar\Controllers\Admin\BroadcastController@index'
 );
 
-Route::get(
+Route::resource(
     '/admin/games',
-    array(
-        'as' => 'admin.games.index',
-        'uses' => 'GamingCalendar\Controllers\Admin\GameController@index'
-    )
+    'GamingCalendar\Controllers\Admin\GameController@index'
 );
 
-Route::get(
+Route::resource(
     '/admin/teams',
-    array(
-        'as' => 'admin.teams.index',
-        'uses' => 'GamingCalendar\Controllers\Admin\TeamController@index'
-    )
+    'GamingCalendar\Controllers\Admin\TeamController@index'
 );
 
-Route::get(
+Route::resource(
     '/admin/genres',
-    array(
-        'as' => 'admin.genre.index',
-        'uses' => 'GamingCalendar\Controllers\Admin\GenreController@index'
-    )
+    'GamingCalendar\Controllers\Admin\GenreController@index'
 );
 // Session Routes
 Route::get('login', array('as' => 'login', 'uses' => 'SessionController@create'));
