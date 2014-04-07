@@ -3,7 +3,7 @@
 /**
  * Class AdminBroadcastPage
  */
-class AdminMAtchPage
+class AdminMatchPage
 {
     // include url of current page
     const URL = '/admin/matches';

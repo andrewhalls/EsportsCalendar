@@ -1,6 +1,5 @@
 <?php namespace Authority\Repo;
 
-abstract class RepoAbstract {
-
-
+abstract class RepoAbstract
+{
 }

@@ -3,8 +3,8 @@
 use Authority\Repo\Session\SessionInterface;
 use Authority\Service\Form\Login\LoginForm;
 
-class SessionController extends BaseController {
-
+class SessionController extends BaseController
+{
     /**
      * Member Vars
      */
@@ -38,8 +38,7 @@ class SessionController extends BaseController {
         // Form Processing
         $result = $this->loginForm->save( Input::all() );
 
-        if( $result['success'] )
-        {
+        if( $result['success'] ) {
             Event::fire('user.login', array(
                 'userId' => $result['sessionData']['userId'],
                 'email' => $result['sessionData']['email'],
