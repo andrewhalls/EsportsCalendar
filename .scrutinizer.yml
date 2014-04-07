@@ -42,10 +42,10 @@ tools:
     php_sim: true
 filter:
     excluded_paths:
-        - app/database/migrations
-        - app/database/seeds
-        - app/tests
+        - app/database/migrations/*
+        - app/database/seeds/*
+        - app/tests/*
         - app/views/*.blade.php
         - app/views/*/*.blade.php
         - app/views/*/*/*.blade.php
-        - app/Authority
+        - app/Authority/*
