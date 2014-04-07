@@ -1,7 +1,7 @@
 <?php namespace Authority\Service\Form\User;
 
-use Authority\Service\Validation\ValidableInterface;
 use Authority\Repo\User\UserInterface;
+use Authority\Service\Validation\ValidableInterface;
 
 class UserForm
 {
@@ -36,11 +36,12 @@ class UserForm
     /**
      * Create a new user
      *
-     * @return integer
+     * @param array $input
+     * @return bool
      */
     public function update(array $input)
     {
-        if( ! $this->valid($input) ) {
+        if (! $this->valid($input)) {
             return false;
         }
 
@@ -60,14 +61,11 @@ class UserForm
     /**
      * Test if form validator passes
      *
-     * @return boolean
+     * @param array $input
+     * @return mixed
      */
     protected function valid(array $input)
     {
-
         return $this->validator->with($input)->passes();
-
     }
-
-
 }

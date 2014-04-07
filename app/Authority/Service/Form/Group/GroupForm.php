@@ -1,7 +1,7 @@
 <?php namespace Authority\Service\Form\Group;
 
-use Authority\Service\Validation\ValidableInterface;
 use Authority\Repo\Group\GroupInterface;
+use Authority\Service\Validation\ValidableInterface;
 
 class GroupForm
 {
@@ -35,11 +35,12 @@ class GroupForm
     /**
      * Create a new group
      *
-     * @return integer
+     * @param array $input
+     * @return \Authority\Repo\Group\Response|bool
      */
     public function save(array $input)
     {
-        if( ! $this->valid($input) ) {
+        if (! $this->valid($input)) {
             return false;
         }
 
@@ -49,11 +50,12 @@ class GroupForm
     /**
      * Update new group
      *
-     * @return integer
+     * @param array $input
+     * @return \Authority\Repo\Group\Response|bool
      */
     public function update(array $input)
     {
-        if( ! $this->valid($input) ) {
+        if (!$this->valid($input)) {
             return false;
         }
 
@@ -73,14 +75,11 @@ class GroupForm
     /**
      * Test if form validator passes
      *
-     * @return boolean
+     * @param array $input
+     * @return mixed
      */
     protected function valid(array $input)
     {
-
         return $this->validator->with($input)->passes();
-
     }
-
-
 }

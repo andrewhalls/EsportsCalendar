@@ -1,7 +1,7 @@
 <?php namespace Authority\Repo\Group;
 
-use Cartalyst\Sentry\Sentry;
 use Authority\Repo\RepoAbstract;
+use Cartalyst\Sentry\Sentry;
 
 class SentryGroup extends RepoAbstract implements GroupInterface
 {
@@ -18,27 +18,38 @@ class SentryGroup extends RepoAbstract implements GroupInterface
     /**
      * Store a newly created resource in storage.
      *
-     * @return Response
+     * @param $data
+     * @return array|Response
      */
     public function store($data)
     {
+        if (! is_array($data)) {
+            $data = array();
+        }
+
         // Logic for missing checkbox values
-        if (!array_key_exists('adminPermissions', $data)) $data['adminPermissions'] = 0;
-        if (!array_key_exists('userPermissions', $data)) $data['userPermissions'] = 0;
+        if (!array_key_exists('adminPermissions', $data)) {
+            $data['adminPermissions'] = 0;
+        }
+        if (!array_key_exists('userPermissions', $data)) {
+            $data['userPermissions'] = 0;
+        }
 
         $result = array();
         try {
-                // Create the group
-                $group = $this->sentry->createGroup(array(
-                    'name'        => e($data['name']),
+            // Create the group
+            $group = $this->sentry->createGroup(
+                array(
+                    'name' => e($data['name']),
                     'permissions' => array(
                         'admin' => e($data['adminPermissions']),
                         'users' => e($data['userPermissions']),
                     ),
-                ));
+                )
+            );
 
-                $result['success'] = true;
-                $result['message'] = trans('groups.created');
+            $result['success'] = true;
+            $result['message'] = trans('groups.created');
         } catch (\Cartalyst\Sentry\Users\LoginRequiredException $e) {
             $result['success'] = false;
             $result['message'] = trans('groups.loginreq');
@@ -53,14 +64,18 @@ class SentryGroup extends RepoAbstract implements GroupInterface
     /**
      * Update the specified resource in storage.
      *
-     * @param  int  $id
+     * @param int $data
      * @return Response
      */
     public function update($data)
     {
         // Logic for missing checkbox values
-        if (!array_key_exists('adminPermissions', $data)) $data['adminPermissions'] = 0;
-        if (!array_key_exists('userPermissions', $data)) $data['userPermissions'] = 0;
+        if (!array_key_exists('adminPermissions', $data)) {
+            $data['adminPermissions'] = 0;
+        }
+        if (!array_key_exists('userPermissions', $data)) {
+            $data['userPermissions'] = 0;
+        }
 
         try {
             // Find the group using the group id
@@ -77,18 +92,18 @@ class SentryGroup extends RepoAbstract implements GroupInterface
             if ($group->save()) {
                 // Group information was updated
                 $result['success'] = true;
-                $result['message'] = trans('groups.updated');;
+                $result['message'] = trans('groups.updated');
             } else {
                 // Group information was not updated
                 $result['success'] = false;
-                $result['message'] = trans('groups.updateproblem');;
+                $result['message'] = trans('groups.updateproblem');
             }
         } catch (\Cartalyst\Sentry\Groups\NameRequiredException $e) {
             $result['success'] = false;
-            $result['message'] = trans('groups.namereq');;
+            $result['message'] = trans('groups.namereq');
         } catch (\Cartalyst\Sentry\Groups\GroupExistsException $e) {
             $result['success'] = false;
-            $result['message'] = trans('groups.groupexists');;
+            $result['message'] = trans('groups.groupexists');
         } catch (\Cartalyst\Sentry\Groups\GroupNotFoundException $e) {
             $result['success'] = false;
             $result['message'] = trans('groups.notfound');
@@ -100,7 +115,7 @@ class SentryGroup extends RepoAbstract implements GroupInterface
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return Response
      */
     public function destroy($id)
