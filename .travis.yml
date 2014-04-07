@@ -13,9 +13,9 @@ before_script:
   - git clone https://github.com/mkoppanen/php-zmq.git
   - sh -c "cd php-zmq && phpize && ./configure --with-zmq=/usr/local && make && sudo make install"
   - echo "extension=zmq.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
-  - "mysql -e 'create database `test_calendar`;'"
+  - mysql create database 'test_calendar'
   - composer install -n --prefer-source
   - php artisan migrate --seed --env="testing"
-  - "vendor/bin/codecept" build
+  - vendor/bin/codecept build
 
-script: "vendor/bin/codecept" run
+script: vendor/bin/codecept run
