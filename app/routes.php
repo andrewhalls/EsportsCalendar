@@ -19,6 +19,7 @@ App::bind('GamingCalendar\Repos\Game\GameRepository', 'GamingCalendar\Repos\Game
 App::bind('GamingCalendar\Repos\Broadcast\BroadcastRepository', 'GamingCalendar\Repos\Broadcast\DbBroadcastRepository');
 App::bind('GamingCalendar\Repos\Team\TeamRepository', 'GamingCalendar\Repos\Team\DbTeamRepository');
 App::bind('GamingCalendar\Repos\Genre\GenreRepository', 'GamingCalendar\Repos\Genre\DbGenreRepository');
+App::bind('GamingCalendar\Repos\Match\MatchRepository', 'GamingCalendar\Repos\Match\DbMatchRepository');
 
 Route::get(
     'message',
@@ -42,6 +43,10 @@ Route::get(
     )
 );
 
+Route::resource(
+    '/admin/matches',
+    'GamingCalendar\Controllers\Admin\MatchController'
+);
 
 Route::resource(
     '/admin/broadcasts',

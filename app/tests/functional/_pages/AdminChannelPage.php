@@ -32,7 +32,7 @@ class AdminChannelPage
     {
         $I = $this->testGuy;
 
-        $I->amOnPage(self::URL);
+        $I->amOnPage(self::URL . '/create');
         $I->click('Add new channel');
         $I->fillField('#title', $name);
         $I->fillField('#url', $url);

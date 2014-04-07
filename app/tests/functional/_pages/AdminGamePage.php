@@ -32,7 +32,7 @@ class AdminGamePage
     {
         $I = $this->testGuy;
 
-        $I->amOnPage(self::URL);
+        $I->amOnPage(self::URL . '/create');
         $I->click('Add new post');
         $I->fillField('#title', $name);
         $I->fillField('Body:', $url);

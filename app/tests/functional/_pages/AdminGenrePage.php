@@ -3,10 +3,10 @@
 /**
  * Class AdminBroadcastPage
  */
-class AdminBroadcastPage
+class AdminGenrePage
 {
     // include url of current page
-    const URL = '/admin/broadcasts';
+    const URL = '/admin/genre';
 
     public static function route($param)
     {
@@ -28,14 +28,13 @@ class AdminBroadcastPage
         return new static($I);
     }
 
-    public function createBroadcast($title, $body)
+    public function createGenre($name)
     {
         $I = $this->testGuy;
 
         $I->amOnPage(self::URL . '/create');
-        $I->click('Add new broadcast');
-        $I->fillField('#title', $title);
-        $I->fillField('Body:', $body);
+        $I->click('Add new genre');
+        $I->fillField('#title', $name);
         $I->click('Submit');
 
         return $this;
