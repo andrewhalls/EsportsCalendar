@@ -5,7 +5,6 @@
 
 
 use \Codeception\Maybe;
-use Codeception\Module\CodeHelper;
 
 /**
  * Inherited methods
@@ -25,7 +24,7 @@ use Codeception\Module\CodeHelper;
 
 class CodeGuy extends \Codeception\AbstractGuy
 {
-    
+
     /**
      * This method is generated.
      * Documentation taken from corresponding module.
@@ -35,7 +34,8 @@ class CodeGuy extends \Codeception\AbstractGuy
      * @see Codeception\Module::getName()
      * @return \Codeception\Maybe
      */
-    public function getName() {
+    public function getName()
+    {
         $this->scenario->addStep(new \Codeception\Step\Action('getName', func_get_args()));
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
@@ -44,4 +44,3 @@ class CodeGuy extends \Codeception\AbstractGuy
         return new Maybe();
     }
 }
-

@@ -3,36 +3,36 @@
 use Authority\Service\Validation\ValidableInterface;
 use Authority\Repo\User\UserInterface;
 
-class SuspendUserForm {
+class SuspendUserForm
+{
+    /**
+     * Form Data
+     *
+     * @var array
+     */
+    protected $data;
 
-	/**
-	 * Form Data
-	 *
-	 * @var array
-	 */
-	protected $data;
+    /**
+     * Validator
+     *
+     * @var \Cesario\Service\Form\ValidableInterface
+     */
+    protected $validator;
 
-	/**
-	 * Validator
-	 *
-	 * @var \Cesario\Service\Form\ValidableInterface 
-	 */
-	protected $validator;
+    /**
+     * Session Repository
+     *
+     * @var \Cesario\Repo\Session\SessionInterface
+     */
+    protected $user;
 
-	/**
-	 * Session Repository
-	 *
-	 * @var \Cesario\Repo\Session\SessionInterface 
-	 */
-	protected $user;
+    public function __construct(ValidableInterface $validator, UserInterface $user)
+    {
+        $this->validator = $validator;
+        $this->user = $user;
+    }
 
-	public function __construct(ValidableInterface $validator, UserInterface $user)
-	{
-		$this->validator = $validator;
-		$this->user = $user;
-	}
-
-	/**
+    /**
      * Process the requested action
      *
      * @return integer
@@ -40,35 +40,34 @@ class SuspendUserForm {
     public function suspend(array $input)
     {
 
-        if( ! $this->valid($input) )
-        {
+        if( ! $this->valid($input) ) {
             return false;
         }
 
         return $this->user->suspend($input['id'], $input['minutes']);
     }
 
-	/**
-	 * Return any validation errors
-	 *
-	 * @return array 
-	 */
-	public function errors()
-	{
-		return $this->validator->errors();
-	}
+    /**
+     * Return any validation errors
+     *
+     * @return array
+     */
+    public function errors()
+    {
+        return $this->validator->errors();
+    }
 
-	/**
-	 * Test if form validator passes
-	 *
-	 * @return boolean 
-	 */
-	protected function valid(array $input)
-	{
+    /**
+     * Test if form validator passes
+     *
+     * @return boolean
+     */
+    protected function valid(array $input)
+    {
 
-		return $this->validator->with($input)->passes();
-		
-	}
+        return $this->validator->with($input)->passes();
+
+    }
 
 
 }

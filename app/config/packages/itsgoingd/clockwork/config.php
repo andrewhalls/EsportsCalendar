@@ -65,9 +65,9 @@ return array(
     | Send Headers for AJAX request
     |--------------------------------------------------------------------------
     |
-    | When trying to collect data the AJAX method can sometimes fail if it is 
-    | missing required headers. For example, an API might require a version 
-    | number using Accept headers to route the HTTP request to the correct 
+    | When trying to collect data the AJAX method can sometimes fail if it is
+    | missing required headers. For example, an API might require a version
+    | number using Accept headers to route the HTTP request to the correct
     | codebase.
     |
     */
