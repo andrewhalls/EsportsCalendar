@@ -64,7 +64,7 @@ class SentryGroup extends RepoAbstract implements GroupInterface
     /**
      * Update the specified resource in storage.
      *
-     * @param int $data
+     * @param array $data
      * @return Response
      */
     public function update($data)

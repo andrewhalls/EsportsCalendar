@@ -13,6 +13,9 @@ class CreateMatchTable extends Migration
                 $table->increments('id');
                 $table->timestamps();
                 $table->softDeletes();
+                /**
+                 * @method
+                 */
                 $table->integer('broadcast_id')->unsigned();
                 $table->integer('team_a');
                 $table->integer('team_b');

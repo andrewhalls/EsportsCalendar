@@ -6,19 +6,6 @@
 class UserControllerTest extends TestCase
 {
 
-    public function setUp()
-    {
-
-        // Call the parent setup method
-        parent::setUp();
-
-    }
-
-    public function tearDown()
-    {
-        parent::tearDown();
-    }
-
     /**
      * Test the two basic user types
      *

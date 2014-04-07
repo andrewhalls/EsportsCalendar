@@ -50,7 +50,7 @@ class GroupForm
     /**
      * Update new group
      *
-     * @param array $input
+     * @param int|array $input
      * @return \Authority\Repo\Group\Response|bool
      */
     public function update(array $input)
