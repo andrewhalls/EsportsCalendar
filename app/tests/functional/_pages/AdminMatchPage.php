@@ -35,8 +35,8 @@ class AdminMatchPage
         $I->click('Add new match');
         $I->fillField('#home_team', $home_team);
         $I->fillField('#away_team', $away_team);
-        $I->fillField('#starts_at', $starts_at);
-        $I->fillField('#ends_at', $ends_at);
+        $I->fillField('#starts_at', $start_at);
+        $I->fillField('#ends_at', $end_at);
 
         if ($map != null) {
             $I->fillField('#map', $map);
