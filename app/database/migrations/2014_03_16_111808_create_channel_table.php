@@ -7,13 +7,16 @@ class CreateChannelTable extends Migration
 {
     public function up()
     {
-        Schema::create('channel', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-            $table->softDeletes();
-            $table->string('url');
-            $table->integer('language_id');
-        });
+        Schema::create(
+            'channel',
+            function (Blueprint $table) {
+                $table->increments('id');
+                $table->timestamps();
+                $table->softDeletes();
+                $table->string('url');
+                $table->integer('language_id');
+            }
+        );
     }
 
     public function down()
