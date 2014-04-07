@@ -44,3 +44,6 @@ filter:
     excluded_paths:
         - app/tests
         - app/views/*.blade.php
+        - app/views/*/*.blade.php
+        - app/views/*/*/*.blade.php
+        - app/Authority
