@@ -57,7 +57,8 @@ class TeamController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.teams.index');
+        return Redirect::route('admin.teams.index')
+            ->with('success', 'Successfully Created Team.');
     }
 
     /**

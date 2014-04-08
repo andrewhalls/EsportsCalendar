@@ -54,6 +54,10 @@ Games
 </div>
 </div>
 
+<div class="pull-right">
+<a href="{{ URL::route('admin.games.create') }}" class="btn btn-success btn-lg">Add New Game</a>
+</div>
+
 </section><!-- /.content -->
 @stop
 

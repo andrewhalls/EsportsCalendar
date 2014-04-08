@@ -54,6 +54,9 @@ Matches
     </div>
 </div>
 
+<div class="pull-right">
+    <a href="{{ URL::route('admin.matches.create') }}" class="btn btn-success btn-lg">Add New Match</a>
+</div>
 </section><!-- /.content -->
 @stop
 

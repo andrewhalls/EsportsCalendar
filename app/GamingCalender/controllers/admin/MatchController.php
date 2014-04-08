@@ -57,7 +57,10 @@ class MatchController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.match.index');
+        Session::put('test', 'Test');
+
+        return Redirect::route('admin.match.index')
+            ->with('success', 'Match Created.');
     }
 
     /**
@@ -104,7 +107,8 @@ class MatchController extends \BaseController
 
         $match->update($data);
 
-        return Redirect::route('admin.match.index');
+        return Redirect::route('admin.match.index')
+            ->with('success', 'Match Edited.');
     }
 
     /**
@@ -117,6 +121,7 @@ class MatchController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.match.index');
+        return Redirect::route('admin.match.index')
+            ->with('success', 'Match Deleted.');
     }
 }

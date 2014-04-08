@@ -71,7 +71,8 @@ class BroadcastController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.broadcasts.index');
+        return Redirect::route('admin.broadcasts.index')
+            ->with('success', 'Broadcast Created.');
     }
 
     /**
@@ -122,7 +123,8 @@ class BroadcastController extends \BaseController
 
         $broadcast->update($data);
 
-        return Redirect::route('admin.broadcasts.index');
+        return Redirect::route('admin.broadcasts.index')
+            ->with('success', 'Broadcast Edited.');
     }
 
     /**
@@ -135,6 +137,7 @@ class BroadcastController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.broadcasts.index');
+        return Redirect::route('admin.broadcasts.index')
+            ->with('success', 'Broadcast Deleted.');
     }
 }

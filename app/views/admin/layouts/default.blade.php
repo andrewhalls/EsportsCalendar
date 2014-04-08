@@ -8,15 +8,15 @@
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- bootstrap 3.0.2 -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- font Awesome -->
-    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <!-- Ionicons -->
-    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
     <!-- DATA TABLES -->
-    <link href="/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
     <!-- Theme style -->
-    <link href="/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="/css/AdminLTE.css" rel="stylesheet" type="text/css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,6 +41,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
 </a>
+
 <div class="navbar-right">
 <ul class="nav navbar-nav">
 <!-- Messages: style can be found in dropdown.less-->
@@ -65,7 +66,8 @@
                         </h4>
                         <p>Why not buy a new awesome theme?</p>
                     </a>
-                </li><!-- end message -->
+                </li>
+                <!-- end message -->
                 <li>
                     <a href="#">
                         <div class="pull-left">
@@ -137,7 +139,8 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-warning danger"></i> Very long description here that may not fit into the page and may cause design problems
+                        <i class="fa fa-warning danger"></i> Very long description here that may not fit into the page
+                        and may cause design problems
                     </a>
                 </li>
                 <li>
@@ -179,12 +182,14 @@
                             <small class="pull-right">20%</small>
                         </h3>
                         <div class="progress xs">
-                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">20% Complete</span>
                             </div>
                         </div>
                     </a>
-                </li><!-- end task item -->
+                </li>
+                <!-- end task item -->
                 <li><!-- Task item -->
                     <a href="#">
                         <h3>
@@ -192,12 +197,14 @@
                             <small class="pull-right">40%</small>
                         </h3>
                         <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">40% Complete</span>
                             </div>
                         </div>
                     </a>
-                </li><!-- end task item -->
+                </li>
+                <!-- end task item -->
                 <li><!-- Task item -->
                     <a href="#">
                         <h3>
@@ -205,12 +212,14 @@
                             <small class="pull-right">60%</small>
                         </h3>
                         <div class="progress xs">
-                            <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">60% Complete</span>
                             </div>
                         </div>
                     </a>
-                </li><!-- end task item -->
+                </li>
+                <!-- end task item -->
                 <li><!-- Task item -->
                     <a href="#">
                         <h3>
@@ -218,12 +227,14 @@
                             <small class="pull-right">80%</small>
                         </h3>
                         <div class="progress xs">
-                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">80% Complete</span>
                             </div>
                         </div>
                     </a>
-                </li><!-- end task item -->
+                </li>
+                <!-- end task item -->
             </ul>
         </li>
         <li class="footer">
@@ -240,7 +251,8 @@
     <ul class="dropdown-menu">
         <!-- User image -->
         <li class="user-header bg-light-blue">
-            <img src="/img/avatar3.png" class="img-circle" alt="User Image" />
+            <img src="/img/avatar3.png" class="img-circle" alt="User Image"/>
+
             <p>
                 Jane Doe - Web Developer
                 <small>Member since Nov. 2012</small>
@@ -274,137 +286,149 @@
 </nav>
 </header>
 <div class="wrapper row-offcanvas row-offcanvas-left">
-<!-- Left side column. contains the logo and sidebar -->
-<aside class="left-side sidebar-offcanvas">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-        <!-- Sidebar user panel -->
-        <div class="user-panel">
-            <div class="pull-left image">
-                <img src="/img/avatar3.png" class="img-circle" alt="User Image" />
-            </div>
-            <div class="pull-left info">
-                <p>Hello, {{ Session::get('name') }}</p>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="/img/avatar3.png" class="img-circle" alt="User Image"/>
+                </div>
+                <div class="pull-left info">
+                    <p>Hello, {{ Session::get('name') }}</p>
 
-                <a href="/users/{{ Session::get('userId') }}"><i class="fa fa-circle text-success"></i> Online</a>
+                    <a href="/users/{{ Session::get('userId') }}"><i class="fa fa-circle text-success"></i> Online</a>
+                </div>
             </div>
-        </div>
-        <!-- search form -->
-        <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search..."/>
+            <!-- search form -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search..."/>
                             <span class="input-group-btn">
-                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i
+                                        class="fa fa-search"></i></button>
                             </span>
-            </div>
-        </form>
-        <!-- /.search form -->
-        <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu">
-            <li>
-                <a href="/index.html">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                </a>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-edit"></i> <span>Forms</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="../forms/general.html"><i class="fa fa-angle-double-right"></i> General Elements</a></li>
-                    <li><a href="../forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li>
-                    <li><a href="../forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>
-                </ul>
-            </li>
-            <li class="treeview active">
-                <a href="#">
-                    <i class="fa fa-table"></i> <span>Broadcasts</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Broadcast</a></li>
-                    <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Broadcasts</a></li>
-                </ul>
-            </li>
-            <li class="treeview active">
-                <a href="#">
-                    <i class="fa fa-table"></i> <span>Teams</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Teams</a></li>
-                    <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Teams</a></li>
-                </ul>
-            </li>
-            <li class="treeview active">
-                <a href="#">
-                    <i class="fa fa-table"></i> <span>Matches</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Matches</a></li>
-                    <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Matches</a></li>
-                </ul>
-            </li>
-            <li class="treeview active">
-                <a href="#">
-                    <i class="fa fa-table"></i> <span>Games</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Game</a></li>
-                    <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Games</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-folder"></i> <span>Examples</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="../examples/invoice.html"><i class="fa fa-angle-double-right"></i> Invoice</a></li>
-                    <li><a href="../examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a></li>
-                    <li><a href="../examples/register.html"><i class="fa fa-angle-double-right"></i> Register</a></li>
-                    <li><a href="../examples/lockscreen.html"><i class="fa fa-angle-double-right"></i> Lockscreen</a></li>
-                    <li><a href="../examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a></li>
-                    <li><a href="../examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a></li>
-                    <li><a href="../examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <!-- /.sidebar -->
-</aside>
+                </div>
+            </form>
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="/index.html">
+                        <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-edit"></i> <span>Forms</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../forms/general.html"><i class="fa fa-angle-double-right"></i> General
+                                Elements</a></li>
+                        <li><a href="../forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a>
+                        </li>
+                        <li><a href="../forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-table"></i> <span>Broadcasts</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Broadcast</a></li>
+                        <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Broadcasts</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-table"></i> <span>Teams</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Teams</a></li>
+                        <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Teams</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-table"></i> <span>Matches</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Matches</a></li>
+                        <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Matches</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-table"></i> <span>Games</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="simple.html"><i class="fa fa-angle-double-right"></i> Add Game</a></li>
+                        <li class="active"><a href="data.html"><i class="fa fa-angle-double-right"></i> View Games</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-folder"></i> <span>Examples</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../examples/invoice.html"><i class="fa fa-angle-double-right"></i> Invoice</a></li>
+                        <li><a href="../examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a></li>
+                        <li><a href="../examples/register.html"><i class="fa fa-angle-double-right"></i> Register</a>
+                        </li>
+                        <li><a href="../examples/lockscreen.html"><i class="fa fa-angle-double-right"></i>
+                                Lockscreen</a></li>
+                        <li><a href="../examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a></li>
+                        <li><a href="../examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a></li>
+                        <li><a href="../examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
 
-<!-- Right side column. Contains the navbar and content of the page -->
-<aside class="right-side">
-<!-- Content Header (Page header) -->
-<section class="content-header">
-    <h1>
-        @section('page-title')
-        @show
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li class="active">Data tables</li>
-    </ol>
-</section>
+    <!-- Right side column. Contains the navbar and content of the page -->
+    <aside class="right-side">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                @section('page-title')
+                @show
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">Data tables</li>
+            </ol>
+        </section>
 
-<!-- Main content -->
-    <section class="content">
-    <!-- Notifications -->
-    @include('layouts/notifications')
-    <!-- ./ notifications -->
+        <!-- Main content -->
+        <section class="content">
+            <!-- Notifications -->
+            @include('admin.layouts.notifications')
+            <!-- ./ notifications -->
 
-    <!-- Content -->
-    @yield('content')
-    <!-- ./ content -->
-</section>
+            <!-- Content -->
+            @yield('content')
+            <!-- ./ content -->
+        </section>
 
-</aside><!-- /.right-side -->
-</div><!-- ./wrapper -->
+    </aside>
+    <!-- /.right-side -->
+</div>
+<!-- ./wrapper -->
 
 
 <!-- jQuery 2.0.2 -->
@@ -419,7 +443,7 @@
 
 <!-- page script -->
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         $("#example1").dataTable();
         $('#example2').dataTable({
             "bPaginate": true,

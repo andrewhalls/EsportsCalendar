@@ -57,7 +57,8 @@ class GenreController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.genres.index');
+        return Redirect::route('admin.genres.index')
+            ->with('success', 'Genre Created.');;
     }
 
     /**
@@ -104,7 +105,8 @@ class GenreController extends \BaseController
 
         $genre->update($data);
 
-        return Redirect::route('admin.genres.index');
+        return Redirect::route('admin.genres.index')
+            ->with('success', 'Genre Edited.');
     }
 
     /**
@@ -117,6 +119,7 @@ class GenreController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.genres.index');
+        return Redirect::route('admin.genres.index')
+            ->with('success', 'Genre Deleted.');
     }
 }

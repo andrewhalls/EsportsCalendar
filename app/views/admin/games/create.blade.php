@@ -27,24 +27,12 @@ Games
             <form role="form">
                 <div class="box-body">
                     <div class="form-group">
-                        {{ Form::label('title') }}
-                        {{ Form::text('title', $game->name, ['class' => 'form-control', 'placeholder' => 'Game Name Title']) }}
+                        {{ Form::label('name') }}
+                        {{ Form::text('name', $game->name, ['class' => 'form-control', 'placeholder' => 'Game Name Title']) }}
                     </div>
                     <div class="form-group">
-                        {{ Form::label('game') }}
-                        {{ Form::select('game_id', $games, $broadcast->game_id, ['class' => 'form-control']) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('start_at', 'Start Time') }}
-                        {{ Form::text('start_at', $broadcast->start_at, ['class' => 'form-control']) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('end_at', 'End Time') }}
-                        {{ Form::text('end_at', $broadcast->end_at, ['class' => 'form-control']) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('description') }}
-                        {{ Form::textArea('description', $broadcast->description, ['class' => 'form-control', 'rows' => '3']) }}
+                        {{ Form::label('url', 'Website') }}
+                        {{ Form::text('url', $game->url, ['class' => 'form-control']) }}
                     </div>
                 </div><!-- /.box-body -->
 

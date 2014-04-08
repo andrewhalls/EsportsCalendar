@@ -61,6 +61,9 @@ Broadcasts
 </div>
 </div>
 
+<div class="pull-right">
+    <a href="{{ URL::route('admin.channels.create') }}" class="btn btn-success btn-lg">Add New Channel</a>
+</div>
 </section><!-- /.content -->
 @stop
 

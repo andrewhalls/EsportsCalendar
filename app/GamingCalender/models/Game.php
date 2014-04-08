@@ -9,8 +9,8 @@ class Game extends \Eloquent
     public $table = 'game';
 
     // Add your validation rules here
-    public static $rules = [
-        // 'title' => 'required'
+    public $rules = [
+        'name' => 'required'
     ];
 
     // Don't forget to fill this array

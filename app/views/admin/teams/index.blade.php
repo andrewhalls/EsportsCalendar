@@ -57,6 +57,9 @@ Teams
 </div>
 </div>
 
+<div class="pull-right">
+    <a href="{{ URL::route('admin.teams.create') }}" class="btn btn-success btn-lg">Add New Team</a>
+</div>
 </section><!-- /.content -->
 @stop
 

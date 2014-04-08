@@ -15,7 +15,7 @@ coverage:
 modules:
     config:
         Db:
-            dsn: 'mysql:host=localhost;dbname=test_calendar'
-            user: 'root'
+            dsn: ''
+            user: ''
             password: ''
-            dump: app/tests/_data/dump.sql
+            dump: tests/_data/dump.sql

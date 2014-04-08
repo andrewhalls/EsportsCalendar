@@ -61,6 +61,10 @@ Broadcasts
 </div>
 </div>
 
+<div class="pull-right">
+    <a href="{{ URL::route('admin.broadcasts.create') }}" class="btn btn-success btn-lg">Add New Broadcast</a>
+</div>
+
 </section><!-- /.content -->
 @stop
 

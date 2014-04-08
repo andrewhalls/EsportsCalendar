@@ -2,7 +2,9 @@
 
 use GamingCalendar\Repos\Game\GameRepository;
 use View;
+use Input;
 use Redirect;
+use Session;
 use Validator;
 
 /**
@@ -29,7 +31,7 @@ class GameController extends \BaseController
     {
         $games = $this->repository->all();
 
-        return View::make('admin.game.index', compact('games'));
+        return View::make('admin.games.index', compact('games'));
     }
 
     /**
@@ -39,7 +41,10 @@ class GameController extends \BaseController
      */
     public function create()
     {
-        return View::make('admin.games.create');
+        $game = $this->repository->instance();
+
+        return View::make('admin.games.create')
+            ->with(compact('game'));
     }
 
     /**
@@ -57,7 +62,8 @@ class GameController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.games.index');
+        return Redirect::route('admin.games.index')
+            ->with('success', 'Game Created.');
     }
 
     /**
@@ -104,7 +110,8 @@ class GameController extends \BaseController
 
         $game->update($data);
 
-        return Redirect::route('admin.games.index');
+        return Redirect::route('admin.games.index')
+            ->with('success', 'Game Edited.');
     }
 
     /**
@@ -117,6 +124,7 @@ class GameController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.games.index');
+        return Redirect::route('admin.games.index')
+            ->with('success', 'Game Deleted.');
     }
 }

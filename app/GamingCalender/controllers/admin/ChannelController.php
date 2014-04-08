@@ -57,7 +57,8 @@ class ChannelController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.channels.index');
+        return Redirect::route('admin.channels.index')
+            ->with('success', 'Channel Created.');
     }
 
     /**
@@ -104,7 +105,8 @@ class ChannelController extends \BaseController
 
         $channel->update($data);
 
-        return Redirect::route('admin.channels.index');
+        return Redirect::route('admin.channels.index')
+            ->with('success', 'Channel Edited.');
     }
 
     /**
@@ -117,6 +119,7 @@ class ChannelController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.channels.index');
+        return Redirect::route('admin.channels.index')
+            ->with('success', 'Channel Deleted.');
     }
 }
