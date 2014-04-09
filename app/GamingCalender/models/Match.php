@@ -9,12 +9,12 @@ class Match extends \Eloquent
     public $table = 'match';
 
     // Add your validation rules here
-    public static $rules = [
+    public $rules = [
         // 'title' => 'required'
     ];
 
     // Don't forget to fill this array
-    protected $guarded = [];
+    protected $fillable = [];
 
     public function homeTeam()
     {

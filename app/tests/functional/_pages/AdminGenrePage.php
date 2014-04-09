@@ -32,8 +32,8 @@ class AdminGenrePage
     {
         $I = $this->testGuy;
 
-        $I->amOnPage(self::URL . '/create');
-        $I->click('Add new genre');
+        $I->amOnPage(self::URL);
+        $I->click('Add New Genre');
         $I->fillField('#title', $name);
         $I->click('Submit');
 

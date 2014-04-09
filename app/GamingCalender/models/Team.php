@@ -10,10 +10,10 @@ class Team extends \Eloquent
     public $table = 'team';
 
     // Add your validation rules here
-    public static $rules = [
-        // 'title' => 'required'
+    public $rules = [
+         'name' => 'required'
     ];
 
     // Don't forget to fill this array
-    protected $guarded = [];
+    protected $fillable = ['name', 'url'];
 }

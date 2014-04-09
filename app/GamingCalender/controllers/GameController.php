@@ -2,6 +2,7 @@
 
 use GamingCalendar\Repos\Game\GameRepository;
 use View;
+use Input;
 use Redirect;
 use Validator;
 

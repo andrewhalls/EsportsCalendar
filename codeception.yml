@@ -15,7 +15,7 @@ coverage:
 modules:
     config:
         Db:
-            dsn: ''
+            dsn: 'mysql:host=localhost:'
             user: ''
             password: ''
-            dump: tests/_data/dump.sql
+            dump: app/tests/_data/dump.sql

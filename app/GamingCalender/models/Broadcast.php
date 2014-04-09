@@ -16,7 +16,7 @@ class Broadcast extends \Eloquent
     ];
 
     // Don't forget to fill this array
-    protected $guarded = [];
+    protected $fillable = ['title', 'start_at', 'end_at', 'description', 'game_id'];
     protected $table = 'broadcast';
     public $timestamps = true;
     protected $softDelete = true;

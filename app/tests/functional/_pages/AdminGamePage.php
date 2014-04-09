@@ -32,10 +32,10 @@ class AdminGamePage
     {
         $I = $this->testGuy;
 
-        $I->amOnPage(self::URL . '/create');
-        $I->click('Add new post');
-        $I->fillField('#title', $name);
-        $I->fillField('Body:', $url);
+        $I->amOnPage(self::URL);
+        $I->click('Add New Game');
+        $I->fillField('#name', $name);
+        $I->fillField('#url', $url);
         $I->click('Submit');
 
         return $this;

@@ -1,4 +1,5 @@
 <?php
+
 $scenario->group('admin');
 
 $I = new TestGuy($scenario);

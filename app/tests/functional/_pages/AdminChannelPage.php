@@ -32,8 +32,8 @@ class AdminChannelPage
     {
         $I = $this->testGuy;
 
-        $I->amOnPage(self::URL . '/create');
-        $I->click('Add new channel');
+        $I->amOnPage(self::URL);
+        $I->click('Add New Channel');
         $I->fillField('#title', $name);
         $I->fillField('#url', $url);
         $I->fillField('#language:', $language);

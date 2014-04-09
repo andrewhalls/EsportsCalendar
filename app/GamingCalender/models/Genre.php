@@ -10,7 +10,7 @@ class Genre extends \Eloquent
     public $table = 'genre';
 
     // Add your validation rules here
-    public static $rules = [
+    public $rules = [
         // 'title' => 'required'
     ];
 

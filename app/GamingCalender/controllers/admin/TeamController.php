@@ -2,6 +2,7 @@
 
 use GamingCalendar\Repos\Team\TeamRepository;
 use View;
+use Input;
 use Redirect;
 use Validator;
 
@@ -58,7 +59,7 @@ class TeamController extends \BaseController
         $this->repository->create($data);
 
         return Redirect::route('admin.teams.index')
-            ->with('success', 'Successfully Created Team.');
+            ->with('success', 'Team Created.');
     }
 
     /**
@@ -105,7 +106,8 @@ class TeamController extends \BaseController
 
         $team->update($data);
 
-        return Redirect::route('admin.teams.index');
+        return Redirect::route('admin.teams.index')
+            ->with('success', 'Team Updated.');
     }
 
     /**
@@ -118,6 +120,7 @@ class TeamController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.teams.index');
+        return Redirect::route('admin.teams.index')
+            ->with('success', 'Team Deleted.');
     }
 }

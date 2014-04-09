@@ -37,7 +37,7 @@ Teams
 <tr>
     <td>{{ $team->logo }}</td>
     <td>{{ $team->name }}</td>
-    <td>{{ $team->website }}</td>
+    <td>{{ $team->url }}</td>
     <td>X</td>
 </tr>
 @endforeach

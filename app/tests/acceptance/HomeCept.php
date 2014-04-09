@@ -1,4 +1,5 @@
 <?php
+
 $I = new WebGuy($scenario);
 $I->wantTo('see if the home page is working');
 $I->amOnPage('/');

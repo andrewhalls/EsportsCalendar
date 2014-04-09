@@ -31,8 +31,8 @@ class AdminMatchPage
     {
         $I = $this->testGuy;
 
-        $I->amOnPage(self::URL . '/create');
-        $I->click('Add new match');
+        $I->amOnPage(self::URL);
+        $I->click('Add New Match');
         $I->fillField('#home_team', $home_team);
         $I->fillField('#away_team', $away_team);
         $I->fillField('#starts_at', $start_at);

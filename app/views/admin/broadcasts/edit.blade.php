@@ -24,8 +24,6 @@ Broadcasts
                 <h3 class="box-title">Quick Example</h3>
             </div>
             <!-- /.box-header -->
-            <!-- form start -->
-            <form role="form">
                 <div class="box-body">
                     <div class="form-group">
                         {{ Form::label('title') }}
@@ -55,7 +53,6 @@ Broadcasts
                 <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-            </form>
         </div>
         <!-- /.box -->
 

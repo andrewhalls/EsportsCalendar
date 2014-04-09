@@ -8,4 +8,4 @@
 
 class_name: TestGuy
 modules:
-    enabled: [Db, Laravel4, Filesystem, TestHelper]
+    enabled: [Laravel4, Filesystem, TestHelper]

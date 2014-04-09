@@ -1,44 +1,53 @@
-@extends('layouts.default')
+@extends('admin.layouts.default')
 
 {{-- Web site Title --}}
 @section('title')
 @parent
-Edit Group
+Edit Team
+@stop
+
+@section('page-title')
+@parent
+Edit Team
 @stop
 
 {{-- Content --}}
 @section('content')
+
+{{ Form::model($team, ['route' => ['admin.teams.update', $team->id], 'method' => 'PUT']) }}
+
 <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-	{{ Form::open(array('action' =>  array('GroupController@update', $group->id), 'method' => 'put')) }}
-        <h2>Edit Group</h2>
-    
-        <div class="form-group {{ ($errors->has('name')) ? 'has-error' : '' }}">
-            {{ Form::text('name', $group->name, array('class' => 'form-control', 'placeholder' => 'Name')) }}
-            {{ ($errors->has('name') ? $errors->first('name') : '') }}
+    <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">Quick Example</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="form-group">
+                    {{ Form::label('name') }}
+                    {{ Form::text('name', $team->name, ['class' => 'form-control', 'placeholder' => 'Team Name']) }}
+                </div>
+                <div class="form-group">
+                    {{ Form::label('url', 'Website') }}
+                    {{ Form::text('url', $team->url, ['class' => 'form-control']) }}
+                </div>
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
         </div>
+        <!-- /.box -->
 
-        {{ Form::label('Permissions') }}
-        <?php 
-            $permissions = $group->getPermissions(); 
-            if (!array_key_exists('admin', $permissions)) $permissions['admin'] = 0;
-            if (!array_key_exists('users', $permissions)) $permissions['users'] = 0;
-        ?>
-        
-        <div class="form-group">
-            <label class="checkbox-inline">
-                {{ Form::checkbox('adminPermissions', 1, $permissions['admin'] ) }} Admin
-            </label>
-            <label class="checkbox-inline">
-                {{ Form::checkbox('userPermissions', 1, $permissions['users'] ) }} Users
-            </label>
-        </div>
-
-        {{ Form::hidden('id', $group->id) }}
-        {{ Form::submit('Save Changes', array('class' => 'btn btn-primary')) }}
-
-    {{ Form::close() }}
     </div>
+
 </div>
 
+{{ Form::close() }}
+
+</section><!-- /.content -->
 @stop
+

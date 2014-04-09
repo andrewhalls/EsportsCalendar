@@ -10,7 +10,7 @@ class Language extends \Eloquent
     public $table = 'language';
 
     // Add your validation rules here
-    public static $rules = [
+    public $rules = [
         // 'title' => 'required'
     ];
 
