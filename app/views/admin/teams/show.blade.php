@@ -36,6 +36,11 @@ Team - {{ $team->name }}
 
 </div>
 
+
+<div class="pull-right">
+    <a href="{{ URL::route('admin.teams.edit', $team->id ) }}" class="btn btn-warning btn-lg">Edit Team</a>
+    <a href="{{ URL::route('admin.teams.edit', $team->id ) }}" class="btn btn-danger btn-lg">Delete Team</a>
+</div>
 </section><!-- /.content -->
 @stop
 

@@ -1,53 +1,47 @@
-<?php namespace GamingCalendar\Controllers\Admin;
+<?php namespace GamingCalendar\Controllers\API;
 
-use GamingCalendar\Repos\Team\TeamRepository;
+use GamingCalendar\Repos\Genre\GenreRepository;
 use View;
-use Input;
 use Redirect;
 use Validator;
 
 /**
- * Class TeamController
+ * Class GenreController
  * @package GamingCalendar\controllers
  */
-class TeamController extends \BaseController
+class GenreController extends \BaseController
 {
 
     /**
-     * @param TeamRepository $repository
+     * @param GenreRepository $repository
      */
-    public function __construct(TeamRepository $repository)
+    public function __construct(GenreRepository $repository)
     {
         $this->repository = $repository;
     }
 
     /**
-     * Display a listing of Teams
+     * Display a listing of Genres
      *
      * @return Response
      */
     public function index()
     {
-        $teams = $this->repository->all();
-
-        return View::make('admin.teams.index', compact('teams'));
+        return $this->repository->all();
     }
 
     /**
-     * Show the form for creating a new Team
+     * Show the form for creating a new Genre
      *
      * @return Response
      */
     public function create()
     {
-        $team = $this->repository->instance();
-
-        return View::make('admin.teams.create')
-            ->with(compact('team'));
+        return View::make('admin.genres.create');
     }
 
     /**
-     * Store a newly created Team in storage.
+     * Store a newly created Genre in storage.
      *
      * @return Response
      */
@@ -61,34 +55,32 @@ class TeamController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Created.');
+        return Redirect::route('admin.genres.index')
+            ->with('success', 'Genre Created.');;
     }
 
     /**
-     * Display the specified Team.
+     * Display the specified Genre.
      *
      * @param  int $id
      * @return Response
      */
     public function show($id)
     {
-        $team = $this->repository->findOrFail($id);
-
-        return View::make('admin.teams.show', compact('team'));
+        return $this->repository->findOrFail($id);
     }
 
     /**
-     * Show the form for editing the specified Team.
+     * Show the form for editing the specified Genre.
      *
      * @param  int $id
      * @return Response
      */
     public function edit($id)
     {
-        $team = $this->repository->find($id);
+        $genre = $this->repository->find($id);
 
-        return View::make('admin.teams.edit', compact('team'));
+        return View::make('admin.genres.edit', compact('genre'));
     }
 
     /**
@@ -99,7 +91,7 @@ class TeamController extends \BaseController
      */
     public function update($id)
     {
-        $team = $this->repository->findOrFail($id);
+        $genre = $this->repository->findOrFail($id);
 
         $validator = Validator::make($data = Input::all(), $this->repository->getRules());
 
@@ -107,10 +99,10 @@ class TeamController extends \BaseController
             return Redirect::back()->withErrors($validator)->withInput();
         }
 
-        $team->update($data);
+        $genre->update($data);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Updated.');
+        return Redirect::route('admin.genres.index')
+            ->with('success', 'Genre Edited.');
     }
 
     /**
@@ -123,7 +115,7 @@ class TeamController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Deleted.');
+        return Redirect::route('admin.genres.index')
+            ->with('success', 'Genre Deleted.');
     }
 }

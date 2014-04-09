@@ -1,53 +1,52 @@
-<?php namespace GamingCalendar\Controllers\Admin;
+<?php namespace GamingCalendar\Controllers\API;
 
-use GamingCalendar\Repos\Team\TeamRepository;
+use GamingCalendar\Repos\Game\GameRepository;
 use View;
 use Input;
 use Redirect;
+use Session;
 use Validator;
 
 /**
- * Class TeamController
+ * Class GameController
  * @package GamingCalendar\controllers
  */
-class TeamController extends \BaseController
+class GameController extends \BaseController
 {
 
     /**
-     * @param TeamRepository $repository
+     * @param GameRepository $repository
      */
-    public function __construct(TeamRepository $repository)
+    public function __construct(GameRepository $repository)
     {
         $this->repository = $repository;
     }
 
     /**
-     * Display a listing of Teams
+     * Display a listing of Games
      *
      * @return Response
      */
     public function index()
     {
-        $teams = $this->repository->all();
-
-        return View::make('admin.teams.index', compact('teams'));
+        return $this->repository->all();
     }
 
     /**
-     * Show the form for creating a new Team
+     * Show the form for creating a new Game
      *
      * @return Response
      */
     public function create()
     {
-        $team = $this->repository->instance();
+        $game = $this->repository->instance();
 
-        return View::make('admin.teams.create')
-            ->with(compact('team'));
+        return View::make('admin.games.create')
+            ->with(compact('game'));
     }
 
     /**
-     * Store a newly created Team in storage.
+     * Store a newly created Game in storage.
      *
      * @return Response
      */
@@ -61,34 +60,32 @@ class TeamController extends \BaseController
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Created.');
+        return Redirect::route('admin.games.index')
+            ->with('success', 'Game Created.');
     }
 
     /**
-     * Display the specified Team.
+     * Display the specified Game.
      *
      * @param  int $id
      * @return Response
      */
     public function show($id)
     {
-        $team = $this->repository->findOrFail($id);
-
-        return View::make('admin.teams.show', compact('team'));
+        return $this->repository->findOrFail($id);
     }
 
     /**
-     * Show the form for editing the specified Team.
+     * Show the form for editing the specified Game.
      *
      * @param  int $id
      * @return Response
      */
     public function edit($id)
     {
-        $team = $this->repository->find($id);
+        $game = $this->repository->find($id);
 
-        return View::make('admin.teams.edit', compact('team'));
+        return View::make('admin.games.edit', compact('game'));
     }
 
     /**
@@ -99,7 +96,7 @@ class TeamController extends \BaseController
      */
     public function update($id)
     {
-        $team = $this->repository->findOrFail($id);
+        $game = $this->repository->findOrFail($id);
 
         $validator = Validator::make($data = Input::all(), $this->repository->getRules());
 
@@ -107,10 +104,10 @@ class TeamController extends \BaseController
             return Redirect::back()->withErrors($validator)->withInput();
         }
 
-        $team->update($data);
+        $game->update($data);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Updated.');
+        return Redirect::route('admin.games.index')
+            ->with('success', 'Game Edited.');
     }
 
     /**
@@ -123,7 +120,7 @@ class TeamController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Deleted.');
+        return Redirect::route('admin.games.index')
+            ->with('success', 'Game Deleted.');
     }
 }

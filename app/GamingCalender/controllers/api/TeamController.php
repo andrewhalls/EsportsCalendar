@@ -1,4 +1,4 @@
-<?php namespace GamingCalendar\Controllers\Admin;
+<?php namespace GamingCalendar\Controllers\API;
 
 use GamingCalendar\Repos\Team\TeamRepository;
 use View;
@@ -28,22 +28,7 @@ class TeamController extends \BaseController
      */
     public function index()
     {
-        $teams = $this->repository->all();
-
-        return View::make('admin.teams.index', compact('teams'));
-    }
-
-    /**
-     * Show the form for creating a new Team
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        $team = $this->repository->instance();
-
-        return View::make('admin.teams.create')
-            ->with(compact('team'));
+        return $this->repository->all();
     }
 
     /**
@@ -56,13 +41,12 @@ class TeamController extends \BaseController
         $validator = Validator::make($data = Input::all(), $this->repository->getRules());
 
         if ($validator->fails()) {
-            return Redirect::back()->withErrors($validator)->withInput();
+            return Response::json(array('result', 'Failed.'));
         }
 
         $this->repository->create($data);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Created.');
+        return Response::json(array('result', 'Team Created.'));
     }
 
     /**
@@ -73,9 +57,7 @@ class TeamController extends \BaseController
      */
     public function show($id)
     {
-        $team = $this->repository->findOrFail($id);
-
-        return View::make('admin.teams.show', compact('team'));
+        return $this->repository->findOrFail($id);
     }
 
     /**
@@ -86,9 +68,7 @@ class TeamController extends \BaseController
      */
     public function edit($id)
     {
-        $team = $this->repository->find($id);
-
-        return View::make('admin.teams.edit', compact('team'));
+        return $this->repository->find($id);
     }
 
     /**
@@ -109,8 +89,7 @@ class TeamController extends \BaseController
 
         $team->update($data);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Updated.');
+        return response::json(array('result' => 'Team Updated.'));
     }
 
     /**
@@ -123,7 +102,6 @@ class TeamController extends \BaseController
     {
         $this->repository->destroy($id);
 
-        return Redirect::route('admin.teams.index')
-            ->with('success', 'Team Deleted.');
+        return response::json(array('result' => 'Team Deleted.'));
     }
 }

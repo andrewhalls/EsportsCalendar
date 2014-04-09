@@ -49,23 +49,44 @@ Route::resource(
 );
 
 Route::resource(
+    '/api/matches',
+    'GamingCalendar\Controllers\API\MatchController'
+);
+
+Route::resource(
     '/admin/broadcasts',
     'GamingCalendar\Controllers\Admin\BroadcastController'
+);
+Route::resource(
+    '/api/broadcasts',
+    'GamingCalendar\Controllers\API\BroadcastController'
 );
 
 Route::resource(
     '/admin/games',
     'GamingCalendar\Controllers\Admin\GameController'
 );
+Route::resource(
+    '/api/games',
+    'GamingCalendar\Controllers\API\GameController'
+);
 
 Route::resource(
     '/admin/teams',
     'GamingCalendar\Controllers\Admin\TeamController'
 );
+Route::resource(
+    '/api/teams',
+    'GamingCalendar\Controllers\API\TeamController'
+);
 
 Route::resource(
     '/admin/genres',
     'GamingCalendar\Controllers\Admin\GenreController'
+);
+Route::resource(
+    '/api/genres',
+    'GamingCalendar\Controllers\API\GenreController'
 );
 // Session Routes
 Route::get('login', array('as' => 'login', 'uses' => 'SessionController@create'));

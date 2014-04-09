@@ -1,38 +1,55 @@
-@extends('layouts.default')
+@extends('admin.layouts.default')
 
 {{-- Web site Title --}}
 @section('title')
 @parent
-Create Group
+Create Team
+@stop
+
+@section('page-title')
+@parent
+Create Team
 @stop
 
 {{-- Content --}}
 @section('content')
+
+{{ Form::model($team, ['route' => 'admin.teams.store']) }}
+
 <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-	{{ Form::open(array('action' => 'GroupController@store')) }}
-        <h2>Create New Group</h2>
-    
-        <div class="form-group {{ ($errors->has('name')) ? 'has-error' : '' }}">
-            {{ Form::text('name', null, array('class' => 'form-control', 'placeholder' => 'Name')) }}
-            {{ ($errors->has('name') ? $errors->first('name') : '') }}
+    <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">Quick Example</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <div class="box-body">
+                <div class="form-group">
+                    {{ Form::label('name') }}
+                    {{ Form::text('name', $team->name, ['class' => 'form-control', 'placeholder' => 'Team Name']) }}
+                </div>
+                <div class="form-group">
+                    {{ Form::label('url', 'Website') }}
+                    {{ Form::text('url', $team->url, ['class' => 'form-control']) }}
+                </div>
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer">
+                {{ Form::submit('Submit', ['class' => 'btn btn-primary', 'id' => 'create-team']) }}
+            </div>
+
         </div>
+        <!-- /.box -->
 
-        {{ Form::label('Permissions') }}
-        <div class="form-group">
-            <label class="checkbox-inline">
-                {{ Form::checkbox('adminPermissions', 1) }} Admin
-            </label>
-            <label class="checkbox-inline">
-                {{ Form::checkbox('userPermissions', 1) }} User
-            </label>
-
-        </div>
-
-        {{ Form::submit('Create New Group', array('class' => 'btn btn-primary')) }}
-
-    {{ Form::close() }}
     </div>
+
 </div>
 
+{{ Form::close() }}
+
+</section><!-- /.content -->
 @stop
+
