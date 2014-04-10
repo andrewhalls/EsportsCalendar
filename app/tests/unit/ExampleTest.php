@@ -10,7 +10,7 @@ class BroadcastTest extends \Codeception\TestCase\Test
 
     protected function _before()
     {
-        $this->broadcast = new GamingCalendar\models\Broadcast();
+        $this->broadcast = new GamingCalendar\models\Broadcast;
     }
 
     protected function _after()
@@ -22,6 +22,6 @@ class BroadcastTest extends \Codeception\TestCase\Test
     {
         $this->broadcast->starts_at = Carbon::createFromDate(1975, 5, 21);
         $this->broadcast->ends_at = Carbon::createFromDate(1975, 5, 22);
-        $this->assertFalse($this->broadcast->isActive);
+        $this->assertFalse($this->broadcast->isActive());
     }
 }
