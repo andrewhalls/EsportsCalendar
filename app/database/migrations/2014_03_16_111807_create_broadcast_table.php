@@ -18,6 +18,7 @@ class CreateBroadcastTable extends Migration
                 $table->datetime('end_at');
                 $table->string('game_id');
                 $table->string('channel_id');
+                $table->text('description');
             }
         );
     }
