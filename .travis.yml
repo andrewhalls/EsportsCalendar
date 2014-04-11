@@ -17,6 +17,6 @@ before_script:
   - php artisan migrate --seed --env="testing"
   - vendor/bin/codecept build
   - php artisan dump-autoload
-  - php artisan serve > /dev/null 2>&1
+  - php artisan serve > /dev/null 2>&1 &
 
 script: vendor/bin/codecept run --steps --colors
