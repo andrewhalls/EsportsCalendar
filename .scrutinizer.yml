@@ -49,3 +49,5 @@ filter:
         - app/views/*/*.blade.php
         - app/views/*/*/*.blade.php
         - app/Authority/*
+		- bootstrap/autoload.php
+		- server.php

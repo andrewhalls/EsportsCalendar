@@ -11,7 +11,7 @@ class BroadcastTest extends \Codeception\TestCase\Test
 
     protected function _before()
     {
-        $this->broadcast = new GamingCalendar\models\Broadcast();
+        $this->broadcast = new GamingCalendar\models\Broadcast;
     }
 
     protected function _after()
