@@ -15,6 +15,12 @@ class DatabaseSeeder extends Seeder
         $this->call('SentryGroupSeeder');
         $this->call('SentryUserSeeder');
         $this->call('SentryUserGroupSeeder');
-    }
+        $this->call('BroadcastsTableSeeder');
+        $this->call('ChannelsTableSeeder');
+        $this->call('GamesTableSeeder');
+        $this->call('GenresTableSeeder');
+        $this->call('MatchesTableSeeder');
+        $this->call('TeamsTableSeeder');
 
+    }
 }
