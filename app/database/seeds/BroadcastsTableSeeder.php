@@ -1,6 +1,6 @@
 <?php
 
-use  GamingCalendar\models\Broadcasts;
+use  GamingCalendar\models\Broadcast;
 
 /**
  * Class BroadcastsTableSeeder
@@ -9,13 +9,11 @@ class BroadcastsTableSeeder extends Seeder
 {
     public function run()
     {
-//        $faker = Faker::create();
-//
-//        foreach(range(1, 10) as $index)
-//        {
-//            Broadcast::create([
-//
-//            ]);
-//        }
+        Broadcast::create([
+            'title' => 'EMS One Katowice',
+            'game_id' => 1,
+            'channel_id' => 1,
+            'description' => 'Yolo Broadcast'
+        ]);
     }
 }

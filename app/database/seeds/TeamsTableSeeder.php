@@ -7,15 +7,8 @@ use  GamingCalendar\models\Team;
  */
 class TeamsTableSeeder extends Seeder
 {
-
     public function run()
     {
-        Team::create(
-            array(
-                'name' => 'Codeception Test',
-                'url'   => 'http://google.com'
-            )
-        );
 
         Team::create(
             array(
@@ -23,5 +16,13 @@ class TeamsTableSeeder extends Seeder
                 'url'   => 'http://google.com'
             )
         );
+
+        Team::create(
+            array(
+                'name' => 'Codeception Test',
+                'url'   => 'http://google.com'
+            )
+        );
+
     }
 }
