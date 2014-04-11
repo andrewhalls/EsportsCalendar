@@ -3,6 +3,6 @@ modules:
     enabled: [PhpBrowser, REST, ApiHelper]
     config:
       PhpBrowser:
-        url: 'http://netdev.gamingcalendar.com/api'
+        url: 'http://localhost:8000/api'
       REST:
-        url: 'http://netdev.gamingcalendar.com/api'
+        url: 'http://localhost:8000/api'
