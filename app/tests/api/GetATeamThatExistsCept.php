@@ -1,6 +1,6 @@
 <?php
 $id = 2;
-$name = 'Codeception United';
+$name = 'Codeception Test';
 
 $I = new ApiGuy($scenario);
 $I->wantTo('get an existing team');

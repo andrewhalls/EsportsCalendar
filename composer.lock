@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "884c1d53696eb5c3fb76607cc0c17ddd",
+    "hash": "a70b3206b0089bbfc8399dee2de1e098",
     "packages": [
         {
             "name": "behat/mink",
@@ -3054,6 +3054,52 @@
             "time": "2014-03-26 11:51:10"
         },
         {
+            "name": "syntax/steam-api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/syntaxerrors/Steam.git",
+                "reference": "77a09c95fdb1b423567b34e69bcbdf9d87e1e298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/syntaxerrors/Steam/zipball/77a09c95fdb1b423567b34e69bcbdf9d87e1e298",
+                "reference": "77a09c95fdb1b423567b34e69bcbdf9d87e1e298",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "laravel/framework": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/models"
+                ],
+                "psr-0": {
+                    "Syntax\\SteamApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stygian",
+                    "email": "stygian.warlock.v2@gmail.com"
+                }
+            ],
+            "description": "A steam-api client for Laravel 4.",
+            "time": "2014-04-04 18:16:43"
+        },
+        {
             "name": "zizaco/factory-muff",
             "version": "dev-master",
             "source": {
@@ -3378,7 +3424,8 @@
     "stability-flags": {
         "zizaco/factory-muff": 20,
         "sidney/latchet": 20,
-        "codeception/codeception": 0
+        "codeception/codeception": 0,
+        "syntax/steam-api": 20
     },
     "platform": [
 

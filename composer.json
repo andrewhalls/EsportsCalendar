@@ -11,7 +11,8 @@
         "zizaco/factory-muff": "dev-master",
         "sidney/latchet": "dev-master",
         "react/zmq": "0.2.*",
-        "codeception/codeception": "@stable"
+        "codeception/codeception": "@stable",
+        "syntax/steam-api": "dev-master"
 	},
 	"require-dev": {
         "way/generators": "2.*",

@@ -110,6 +110,7 @@ return array(
         'Authority\Repo\RepoServiceProvider',
         'Authority\Service\Form\FormServiceProvider',
         'Sidney\Latchet\LatchetServiceProvider',
+        'Syntax\SteamApi\SteamApiServiceProvider'
     ),
 
     /*
